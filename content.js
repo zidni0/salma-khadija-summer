@@ -41,11 +41,11 @@ window.LEARNKIT = {
               subject: 'Math',
               title: 'Integers on the Number Line',
               blocks: [
-                { type: 'text', text: 'Integers are whole numbers and their opposites: ..., -2, -1, 0, 1, 2, ...' },
-                { type: 'example', text: 'If it is 5°C above zero, we write +5. If it is 3°C below zero, we write -3.' },
-                { type: 'vocab', word: 'integer', def: 'A whole number that can be positive, negative, or zero.' },
-                { type: 'vocab', word: 'opposite', def: 'Two numbers the same distance from 0, but on different sides. The opposite of 4 is -4.' },
-                { type: 'tip', text: 'Numbers to the right of 0 are positive. Numbers to the left of 0 are negative.' }
+                { p: 'Integers are whole numbers and their opposites: ..., -2, -1, 0, 1, 2, ...' },
+                { example: 'If it is 5°C above zero, we write +5. If it is 3°C below zero, we write -3.' },
+                { h: 'Vocabulary: integer', p: 'A whole number that can be positive, negative, or zero.' },
+                { h: 'Vocabulary: opposite', p: 'Two numbers the same distance from 0, but on different sides. The opposite of 4 is -4.' },
+                { tip: 'Numbers to the right of 0 are positive. Numbers to the left of 0 are negative.' }
               ]
             },
             {
@@ -97,11 +97,11 @@ window.LEARNKIT = {
               subject: 'Math',
               title: 'Rules for Adding Integers',
               blocks: [
-                { type: 'text', text: 'Adding a positive number means move right on the number line. Adding a negative number means move left.' },
-                { type: 'example', text: '3 + (-5): Start at 3, move 5 left. You land on -2.' },
-                { type: 'example', text: '-4 + 7: Start at -4, move 7 right. You land on 3.' },
-                { type: 'tip', text: 'If the signs are the same, add and keep the sign. If the signs are different, subtract and keep the sign of the bigger number.' },
-                { type: 'vocab', word: 'sum', def: 'The answer when you add two or more numbers.' }
+                { p: 'Adding a positive number means move right on the number line. Adding a negative number means move left.' },
+                { example: '3 + (-5): Start at 3, move 5 left. You land on -2.' },
+                { example: '-4 + 7: Start at -4, move 7 right. You land on 3.' },
+                { tip: 'If the signs are the same, add and keep the sign. If the signs are different, subtract and keep the sign of the bigger number.' },
+                { h: 'Vocabulary: sum', p: 'The answer when you add two or more numbers.' }
               ]
             },
             {
@@ -151,11 +151,11 @@ window.LEARNKIT = {
               subject: 'Math',
               title: 'Subtract by Adding the Opposite',
               blocks: [
-                { type: 'text', text: 'To subtract a number, add its opposite.' },
-                { type: 'example', text: '5 - 8 = 5 + (-8) = -3' },
-                { type: 'example', text: '-2 - (-6) = -2 + 6 = 4' },
-                { type: 'tip', text: 'Two minus signs next to each other become a plus sign.' },
-                { type: 'vocab', word: 'difference', def: 'The answer when you subtract one number from another.' }
+                { p: 'To subtract a number, add its opposite.' },
+                { example: '5 - 8 = 5 + (-8) = -3' },
+                { example: '-2 - (-6) = -2 + 6 = 4' },
+                { tip: 'Two minus signs next to each other become a plus sign.' },
+                { h: 'Vocabulary: difference', p: 'The answer when you subtract one number from another.' }
               ]
             },
             {
@@ -205,11 +205,11 @@ window.LEARNKIT = {
               subject: 'Math',
               title: 'Sign Rules',
               blocks: [
-                { type: 'text', text: 'Same signs = positive answer. Different signs = negative answer.' },
-                { type: 'example', text: '(-3) × (-4) = 12 (same signs, positive)' },
-                { type: 'example', text: '(-3) × 4 = -12 (different signs, negative)' },
-                { type: 'example', text: '-20 ÷ 5 = -4 (different signs, negative)' },
-                { type: 'tip', text: 'An even number of negative signs gives a positive answer. An odd number gives negative.' }
+                { p: 'Same signs = positive answer. Different signs = negative answer.' },
+                { example: '(-3) × (-4) = 12 (same signs, positive)' },
+                { example: '(-3) × 4 = -12 (different signs, negative)' },
+                { example: '-20 ÷ 5 = -4 (different signs, negative)' },
+                { tip: 'An even number of negative signs gives a positive answer. An odd number gives negative.' }
               ]
             },
             {
@@ -266,11 +266,11 @@ window.LEARNKIT = {
               subject: 'Math',
               title: 'Ratios in Real Life',
               blocks: [
-                { type: 'text', text: 'A ratio compares two amounts. We can write 3 apples to 2 oranges as 3:2, 3 to 2, or 3/2.' },
-                { type: 'example', text: 'In a class with 10 girls and 15 boys, the ratio of girls to boys is 10:15. We can simplify to 2:3.' },
-                { type: 'vocab', word: 'ratio', def: 'A comparison of two quantities by division.' },
-                { type: 'vocab', word: 'simplify', def: 'Make a ratio or fraction smaller by dividing both parts by the same number.' },
-                { type: 'tip', text: 'Order matters! The ratio of cats to dogs is different from dogs to cats.' }
+                { p: 'A ratio compares two amounts. We can write 3 apples to 2 oranges as 3:2, 3 to 2, or 3/2.' },
+                { example: 'In a class with 10 girls and 15 boys, the ratio of girls to boys is 10:15. We can simplify to 2:3.' },
+                { h: 'Vocabulary: ratio', p: 'A comparison of two quantities by division.' },
+                { h: 'Vocabulary: simplify', p: 'Make a ratio or fraction smaller by dividing both parts by the same number.' },
+                { tip: 'Order matters! The ratio of cats to dogs is different from dogs to cats.' }
               ]
             },
             {
@@ -319,10 +319,10 @@ window.LEARNKIT = {
               subject: 'Math',
               title: 'Finding Unit Rates',
               blocks: [
-                { type: 'text', text: 'A rate compares two different quantities. A unit rate has a denominator of 1.' },
-                { type: 'example', text: 'If 4 sandwiches cost $12, the unit price is $12 ÷ 4 = $3 per sandwich.' },
-                { type: 'example', text: 'A car drives 180 miles in 3 hours. Unit rate = 180 ÷ 3 = 60 miles per hour.' },
-                { type: 'vocab', word: 'unit rate', def: 'A rate for one unit of something, like one item, one hour, or one mile.' }
+                { p: 'A rate compares two different quantities. A unit rate has a denominator of 1.' },
+                { example: 'If 4 sandwiches cost $12, the unit price is $12 ÷ 4 = $3 per sandwich.' },
+                { example: 'A car drives 180 miles in 3 hours. Unit rate = 180 ÷ 3 = 60 miles per hour.' },
+                { h: 'Vocabulary: unit rate', p: 'A rate for one unit of something, like one item, one hour, or one mile.' }
               ]
             },
             {
@@ -370,10 +370,10 @@ window.LEARNKIT = {
               subject: 'Math',
               title: 'Tables, Graphs, and Equations',
               blocks: [
-                { type: 'text', text: 'A proportional relationship passes through (0,0) on a graph and has a constant ratio.' },
-                { type: 'example', text: 'If 1 apple costs $2, then 2 apples cost $4, 3 apples cost $6. The equation is cost = 2 × apples.' },
-                { type: 'vocab', word: 'constant of proportionality', def: 'The number you multiply one quantity by to get the other. In cost = 2 × apples, the constant is 2.' },
-                { type: 'tip', text: 'Check a table by dividing each pair. If the answer is always the same, it is proportional.' }
+                { p: 'A proportional relationship passes through (0,0) on a graph and has a constant ratio.' },
+                { example: 'If 1 apple costs $2, then 2 apples cost $4, 3 apples cost $6. The equation is cost = 2 × apples.' },
+                { h: 'Vocabulary: constant of proportionality', p: 'The number you multiply one quantity by to get the other. In cost = 2 × apples, the constant is 2.' },
+                { tip: 'Check a table by dividing each pair. If the answer is always the same, it is proportional.' }
               ]
             },
             {
@@ -420,10 +420,10 @@ window.LEARNKIT = {
               subject: 'Math',
               title: 'Percent as a Rate',
               blocks: [
-                { type: 'text', text: 'Percent means "per 100." 20% = 20/100 = 0.20.' },
-                { type: 'example', text: '20% of $50 = 0.20 × 50 = $10.' },
-                { type: 'example', text: 'A $80 shirt is 25% off. Discount = 0.25 × 80 = $20. Sale price = $60.' },
-                { type: 'tip', text: 'To find a percent of a number, change the percent to a decimal, then multiply.' }
+                { p: 'Percent means "per 100." 20% = 20/100 = 0.20.' },
+                { example: '20% of $50 = 0.20 × 50 = $10.' },
+                { example: 'A $80 shirt is 25% off. Discount = 0.25 × 80 = $20. Sale price = $60.' },
+                { tip: 'To find a percent of a number, change the percent to a decimal, then multiply.' }
               ]
             },
             {
@@ -472,10 +472,10 @@ window.LEARNKIT = {
               subject: 'Math',
               title: 'Percent Increase & Decrease',
               blocks: [
-                { type: 'text', text: 'Percent change = (change amount ÷ original amount) × 100.' },
-                { type: 'example', text: 'A plant grew from 20 cm to 25 cm. Change = 5. Percent increase = (5 ÷ 20) × 100 = 25%.' },
-                { type: 'example', text: 'A price drops from $80 to $68. Change = $12. Percent decrease = (12 ÷ 80) × 100 = 15%.' },
-                { type: 'tip', text: 'Always divide by the original amount, not the new amount.' }
+                { p: 'Percent change = (change amount ÷ original amount) × 100.' },
+                { example: 'A plant grew from 20 cm to 25 cm. Change = 5. Percent increase = (5 ÷ 20) × 100 = 25%.' },
+                { example: 'A price drops from $80 to $68. Change = $12. Percent decrease = (12 ÷ 80) × 100 = 15%.' },
+                { tip: 'Always divide by the original amount, not the new amount.' }
               ]
             },
             {
@@ -528,11 +528,11 @@ window.LEARNKIT = {
               subject: 'Math',
               title: 'Variables and Terms',
               blocks: [
-                { type: 'text', text: 'A variable is a letter that stands for a number. An expression is a math phrase without an equals sign.' },
-                { type: 'example', text: '3x + 5 means "3 times a number, plus 5."' },
-                { type: 'example', text: 'Like terms have the same variable. 4x and 7x are like terms. 4x and 5 are not.' },
-                { type: 'vocab', word: 'coefficient', def: 'The number in front of a variable. In 8y, the coefficient is 8.' },
-                { type: 'tip', text: 'Only combine like terms. Keep the sign in front of each term.' }
+                { p: 'A variable is a letter that stands for a number. An expression is a math phrase without an equals sign.' },
+                { example: '3x + 5 means "3 times a number, plus 5."' },
+                { example: 'Like terms have the same variable. 4x and 7x are like terms. 4x and 5 are not.' },
+                { h: 'Vocabulary: coefficient', p: 'The number in front of a variable. In 8y, the coefficient is 8.' },
+                { tip: 'Only combine like terms. Keep the sign in front of each term.' }
               ]
             },
             {
@@ -579,11 +579,11 @@ window.LEARNKIT = {
               subject: 'Math',
               title: 'The Distributive Property',
               blocks: [
-                { type: 'text', text: 'Multiply the outside number by each term inside the parentheses.' },
-                { type: 'example', text: '2(x + 3) = 2x + 6' },
-                { type: 'example', text: '4(2x - 5) = 8x - 20' },
-                { type: 'vocab', word: 'factor', def: 'To write an expression as a product. 6x + 9 = 3(2x + 3).' },
-                { type: 'tip', text: 'To factor, find the biggest number that divides all terms.' }
+                { p: 'Multiply the outside number by each term inside the parentheses.' },
+                { example: '2(x + 3) = 2x + 6' },
+                { example: '4(2x - 5) = 8x - 20' },
+                { h: 'Vocabulary: factor', p: 'To write an expression as a product. 6x + 9 = 3(2x + 3).' },
+                { tip: 'To factor, find the biggest number that divides all terms.' }
               ]
             },
             {
@@ -630,10 +630,10 @@ window.LEARNKIT = {
               subject: 'Math',
               title: 'Reverse Operations',
               blocks: [
-                { type: 'text', text: 'To solve an equation, do the opposite operation to isolate the variable.' },
-                { type: 'example', text: '2x + 5 = 13. First subtract 5: 2x = 8. Then divide by 2: x = 4.' },
-                { type: 'example', text: 'x/3 - 2 = 4. First add 2: x/3 = 6. Then multiply by 3: x = 18.' },
-                { type: 'tip', text: 'Use reverse PEMDAS: undo addition/subtraction first, then multiplication/division.' }
+                { p: 'To solve an equation, do the opposite operation to isolate the variable.' },
+                { example: '2x + 5 = 13. First subtract 5: 2x = 8. Then divide by 2: x = 4.' },
+                { example: 'x/3 - 2 = 4. First add 2: x/3 = 6. Then multiply by 3: x = 18.' },
+                { tip: 'Use reverse PEMDAS: undo addition/subtraction first, then multiplication/division.' }
               ]
             },
             {
@@ -681,11 +681,11 @@ window.LEARNKIT = {
               subject: 'Math',
               title: 'Solving Simple Inequalities',
               blocks: [
-                { type: 'text', text: 'Solve inequalities like equations, but flip the sign if you multiply or divide by a negative number.' },
-                { type: 'example', text: 'x + 3 > 7 → x > 4' },
-                { type: 'example', text: '2x ≤ 10 → x ≤ 5' },
-                { type: 'example', text: '-3x > 12 → x < -4 (sign flips!)' },
-                { type: 'vocab', word: 'inequality', def: 'A math sentence that uses <, >, ≤, ≥, or ≠.' }
+                { p: 'Solve inequalities like equations, but flip the sign if you multiply or divide by a negative number.' },
+                { example: 'x + 3 > 7 → x > 4' },
+                { example: '2x ≤ 10 → x ≤ 5' },
+                { example: '-3x > 12 → x < -4 (sign flips!)' },
+                { h: 'Vocabulary: inequality', p: 'A math sentence that uses <, >, ≤, ≥, or ≠.' }
               ]
             },
             {
@@ -738,9 +738,9 @@ window.LEARNKIT = {
               subject: 'Math',
               title: 'Using a Scale',
               blocks: [
-                { type: 'text', text: 'Scale tells you the ratio of the drawing to real life. 1 cm : 5 m means 1 cm on paper = 5 m in real life.' },
-                { type: 'example', text: 'A room is 4 cm long on a scale drawing with scale 1 cm : 2 m. Real length = 4 × 2 = 8 m.' },
-                { type: 'tip', text: 'Multiply to go from drawing to real. Divide to go from real to drawing.' }
+                { p: 'Scale tells you the ratio of the drawing to real life. 1 cm : 5 m means 1 cm on paper = 5 m in real life.' },
+                { example: 'A room is 4 cm long on a scale drawing with scale 1 cm : 2 m. Real length = 4 × 2 = 8 m.' },
+                { tip: 'Multiply to go from drawing to real. Divide to go from real to drawing.' }
               ]
             },
             {
@@ -785,11 +785,11 @@ window.LEARNKIT = {
               subject: 'Math',
               title: 'Pi, Radius, and Diameter',
               blocks: [
-                { type: 'text', text: 'Circumference is the distance around a circle. Area is the space inside.' },
-                { type: 'example', text: 'C = 2πr and A = πr². Use π ≈ 3.14.' },
-                { type: 'example', text: 'A circle with radius 3 has area = 3.14 × 3 × 3 = 28.26.' },
-                { type: 'vocab', word: 'radius', def: 'The distance from the center to the edge of a circle.' },
-                { type: 'vocab', word: 'diameter', def: 'The distance across a circle through the center. Diameter = 2 × radius.' }
+                { p: 'Circumference is the distance around a circle. Area is the space inside.' },
+                { example: 'C = 2πr and A = πr². Use π ≈ 3.14.' },
+                { example: 'A circle with radius 3 has area = 3.14 × 3 × 3 = 28.26.' },
+                { h: 'Vocabulary: radius', p: 'The distance from the center to the edge of a circle.' },
+                { h: 'Vocabulary: diameter', p: 'The distance across a circle through the center. Diameter = 2 × radius.' }
               ]
             },
             {
@@ -834,10 +834,10 @@ window.LEARNKIT = {
               subject: 'Math',
               title: 'Angle Relationships',
               blocks: [
-                { type: 'text', text: 'Complementary angles add to 90°. Supplementary angles add to 180°. Vertical angles are equal.' },
-                { type: 'example', text: 'If one angle is 35°, its complement is 90 - 35 = 55°.' },
-                { type: 'example', text: 'Two supplementary angles are 120° and x. x = 180 - 120 = 60°.' },
-                { type: 'vocab', word: 'adjacent angles', def: 'Angles next to each other that share a side and a vertex.' }
+                { p: 'Complementary angles add to 90°. Supplementary angles add to 180°. Vertical angles are equal.' },
+                { example: 'If one angle is 35°, its complement is 90 - 35 = 55°.' },
+                { example: 'Two supplementary angles are 120° and x. x = 180 - 120 = 60°.' },
+                { h: 'Vocabulary: adjacent angles', p: 'Angles next to each other that share a side and a vertex.' }
               ]
             },
             {
@@ -884,10 +884,10 @@ window.LEARNKIT = {
               subject: 'Math',
               title: 'Composite Figures',
               blocks: [
-                { type: 'text', text: 'Break a shape into simpler shapes. Find each area, then add or subtract.' },
-                { type: 'example', text: 'A rectangle 8×5 with a triangle on top (base 8, height 3). Area = 40 + 12 = 52.' },
-                { type: 'vocab', word: 'surface area', def: 'The total area of all the faces of a 3D shape.' },
-                { type: 'vocab', word: 'volume', def: 'The amount of space inside a 3D shape.' }
+                { p: 'Break a shape into simpler shapes. Find each area, then add or subtract.' },
+                { example: 'A rectangle 8×5 with a triangle on top (base 8, height 3). Area = 40 + 12 = 52.' },
+                { h: 'Vocabulary: surface area', p: 'The total area of all the faces of a 3D shape.' },
+                { h: 'Vocabulary: volume', p: 'The amount of space inside a 3D shape.' }
               ]
             },
             {
@@ -939,9 +939,9 @@ window.LEARNKIT = {
               subject: 'Math',
               title: 'Samples and Populations',
               blocks: [
-                { type: 'text', text: 'A population is the whole group. A sample is a small part of the group. A good sample is random and representative.' },
-                { type: 'example', text: 'To find the favorite fruit in a school, asking only grade 7 students is not representative of the whole school.' },
-                { type: 'vocab', word: 'random sample', def: 'A sample where every member of the population has an equal chance of being chosen.' }
+                { p: 'A population is the whole group. A sample is a small part of the group. A good sample is random and representative.' },
+                { example: 'To find the favorite fruit in a school, asking only grade 7 students is not representative of the whole school.' },
+                { h: 'Vocabulary: random sample', p: 'A sample where every member of the population has an equal chance of being chosen.' }
               ]
             },
             {
@@ -987,9 +987,9 @@ window.LEARNKIT = {
               subject: 'Math',
               title: 'Likelihood',
               blocks: [
-                { type: 'text', text: 'Probability = (number of ways it can happen) ÷ (total number of possible outcomes).' },
-                { type: 'example', text: 'A bag has 3 red and 7 blue marbles. P(red) = 3/10 = 0.3 = 30%.' },
-                { type: 'tip', text: 'Probability near 0 means unlikely. Near 1 means likely. 1/2 means equal chance.' }
+                { p: 'Probability = (number of ways it can happen) ÷ (total number of possible outcomes).' },
+                { example: 'A bag has 3 red and 7 blue marbles. P(red) = 3/10 = 0.3 = 30%.' },
+                { tip: 'Probability near 0 means unlikely. Near 1 means likely. 1/2 means equal chance.' }
               ]
             },
             {
@@ -1035,9 +1035,9 @@ window.LEARNKIT = {
               subject: 'Math',
               title: 'Counting Outcomes',
               blocks: [
-                { type: 'text', text: 'Compound events combine two or more simple events. We can use organized lists, tables, or tree diagrams to count outcomes.' },
-                { type: 'example', text: 'Flip a coin and roll a die. Outcomes: H1, H2, H3, H4, H5, H6, T1, T2, T3, T4, T5, T6. Total = 12.' },
-                { type: 'tip', text: 'Multiply the number of choices at each step to find total outcomes.' }
+                { p: 'Compound events combine two or more simple events. We can use organized lists, tables, or tree diagrams to count outcomes.' },
+                { example: 'Flip a coin and roll a die. Outcomes: H1, H2, H3, H4, H5, H6, T1, T2, T3, T4, T5, T6. Total = 12.' },
+                { tip: 'Multiply the number of choices at each step to find total outcomes.' }
               ]
             },
             {
@@ -1089,10 +1089,10 @@ window.LEARNKIT = {
               subject: 'ELA',
               title: 'Cite Text Evidence',
               blocks: [
-                { type: 'text', text: 'Text evidence is words, phrases, or sentences from the passage that support your answer.' },
-                { type: 'example', text: 'Question: How does Maria feel? Evidence: "Maria smiled and hugged her sister."' },
-                { type: 'vocab', word: 'cite', def: 'To point to a specific part of the text as proof.' },
-                { type: 'tip', text: 'Use sentence frames: "The text says..." or "For example, the author writes..."' }
+                { p: 'Text evidence is words, phrases, or sentences from the passage that support your answer.' },
+                { example: 'Question: How does Maria feel? Evidence: "Maria smiled and hugged her sister."' },
+                { h: 'Vocabulary: cite', p: 'To point to a specific part of the text as proof.' },
+                { tip: 'Use sentence frames: "The text says..." or "For example, the author writes..."' }
               ]
             },
             {
@@ -1136,10 +1136,10 @@ window.LEARNKIT = {
               subject: 'ELA',
               title: 'Main Message',
               blocks: [
-                { type: 'text', text: 'Central idea = the most important point in an informational text. Theme = the message about life in a story.' },
-                { type: 'example', text: 'Article about recycling: Central idea = "Recycling helps protect the environment."' },
-                { type: 'example', text: 'Story about a girl who never gives up: Theme = "Hard work leads to success."' },
-                { type: 'tip', text: 'A theme is usually a sentence, not just one word.' }
+                { p: 'Central idea = the most important point in an informational text. Theme = the message about life in a story.' },
+                { example: 'Article about recycling: Central idea = "Recycling helps protect the environment."' },
+                { example: 'Story about a girl who never gives up: Theme = "Hard work leads to success."' },
+                { tip: 'A theme is usually a sentence, not just one word.' }
               ]
             },
             {
@@ -1186,9 +1186,9 @@ window.LEARNKIT = {
               subject: 'ELA',
               title: 'Reading Between the Lines',
               blocks: [
-                { type: 'text', text: 'Authors do not always tell us everything. We use clues + background knowledge to figure things out.' },
-                { type: 'example', text: 'Text: "Maya zipped her jacket and shivered." Inference: It is cold outside.' },
-                { type: 'tip', text: 'Ask: What does the text say? What do I already know? What can I figure out?' }
+                { p: 'Authors do not always tell us everything. We use clues + background knowledge to figure things out.' },
+                { example: 'Text: "Maya zipped her jacket and shivered." Inference: It is cold outside.' },
+                { tip: 'Ask: What does the text say? What do I already know? What can I figure out?' }
               ]
             },
             {
@@ -1233,10 +1233,10 @@ window.LEARNKIT = {
               subject: 'ELA',
               title: 'Why Was This Written?',
               blocks: [
-                { type: 'text', text: 'Authors write to inform, persuade, entertain, or explain. Their word choice shows their point of view.' },
-                { type: 'example', text: 'An ad says, "The best phone ever!" Purpose: persuade. Point of view: the phone is amazing.' },
-                { type: 'vocab', word: 'purpose', def: 'The reason the author wrote the text.' },
-                { type: 'vocab', word: 'point of view', def: 'What the author thinks or feels about the topic.' }
+                { p: 'Authors write to inform, persuade, entertain, or explain. Their word choice shows their point of view.' },
+                { example: 'An ad says, "The best phone ever!" Purpose: persuade. Point of view: the phone is amazing.' },
+                { h: 'Vocabulary: purpose', p: 'The reason the author wrote the text.' },
+                { h: 'Vocabulary: point of view', p: 'What the author thinks or feels about the topic.' }
               ]
             },
             {
@@ -1289,9 +1289,9 @@ window.LEARNKIT = {
               subject: 'ELA',
               title: 'The Heart of the Paragraph',
               blocks: [
-                { type: 'text', text: 'A topic sentence tells the reader what the paragraph is about. It is usually the first sentence.' },
-                { type: 'example', text: 'Topic: My favorite season. Topic sentence: "Winter is my favorite season because it brings snow, holidays, and hot chocolate."' },
-                { type: 'tip', text: 'A good topic sentence is specific. It should not be too broad or too narrow.' }
+                { p: 'A topic sentence tells the reader what the paragraph is about. It is usually the first sentence.' },
+                { example: 'Topic: My favorite season. Topic sentence: "Winter is my favorite season because it brings snow, holidays, and hot chocolate."' },
+                { tip: 'A good topic sentence is specific. It should not be too broad or too narrow.' }
               ]
             },
             {
@@ -1335,9 +1335,9 @@ window.LEARNKIT = {
               subject: 'ELA',
               title: 'Facts, Examples, and Explanations',
               blocks: [
-                { type: 'text', text: 'Supporting details can be facts, examples, quotes, reasons, or descriptions.' },
-                { type: 'example', text: 'Topic sentence: "Reading helps you learn new words." Detail: "When I read Harry Potter, I learned words like "muggle" and "quidditch."' },
-                { type: 'tip', text: 'Each detail should connect back to the topic sentence.' }
+                { p: 'Supporting details can be facts, examples, quotes, reasons, or descriptions.' },
+                { example: 'Topic sentence: "Reading helps you learn new words." Detail: "When I read Harry Potter, I learned words like "muggle" and "quidditch."' },
+                { tip: 'Each detail should connect back to the topic sentence.' }
               ]
             },
             {
@@ -1381,10 +1381,10 @@ window.LEARNKIT = {
               subject: 'ELA',
               title: 'Glue Words and Closing Sentences',
               blocks: [
-                { type: 'text', text: 'Transitions like first, next, also, because, and therefore help sentences flow.' },
-                { type: 'example', text: '"First, exercise improves your health. Also, it boosts your mood."' },
-                { type: 'example', text: 'A concluding sentence restates the main idea in a new way.' },
-                { type: 'vocab', word: 'transition', def: 'A word or phrase that connects ideas.' }
+                { p: 'Transitions like first, next, also, because, and therefore help sentences flow.' },
+                { example: '"First, exercise improves your health. Also, it boosts your mood."' },
+                { example: 'A concluding sentence restates the main idea in a new way.' },
+                { h: 'Vocabulary: transition', p: 'A word or phrase that connects ideas.' }
               ]
             },
             {
@@ -1430,9 +1430,9 @@ window.LEARNKIT = {
               subject: 'ELA',
               title: 'Restate, Answer, Cite, Cite, Explain',
               blocks: [
-                { type: 'text', text: 'RACCE helps you answer questions with a complete paragraph.' },
-                { type: 'example', text: 'R: The author believes school should start later. A: Later start times help students sleep more. C: The text says, "Teenagers need 8-10 hours of sleep." C: It also says, "Students with later start times score higher on tests." E: This shows that more sleep improves learning.' },
-                { type: 'tip', text: 'Use two pieces of evidence for stronger support.' }
+                { p: 'RACCE helps you answer questions with a complete paragraph.' },
+                { example: 'R: The author believes school should start later. A: Later start times help students sleep more. C: The text says, "Teenagers need 8-10 hours of sleep." C: It also says, "Students with later start times score higher on tests." E: This shows that more sleep improves learning.' },
+                { tip: 'Use two pieces of evidence for stronger support.' }
               ]
             },
             {
@@ -1485,10 +1485,10 @@ window.LEARNKIT = {
               subject: 'ELA',
               title: 'What Is a Claim?',
               blocks: [
-                { type: 'text', text: 'A claim is the main point of your argument. Someone should be able to disagree with it.' },
-                { type: 'example', text: 'Weak claim: "School is important." Strong claim: "Schools should require students to wear uniforms because uniforms reduce bullying and save money."' },
-                { type: 'vocab', word: 'claim', def: 'A statement that someone argues is true.' },
-                { type: 'tip', text: 'A strong claim has a topic and at least two reasons.' }
+                { p: 'A claim is the main point of your argument. Someone should be able to disagree with it.' },
+                { example: 'Weak claim: "School is important." Strong claim: "Schools should require students to wear uniforms because uniforms reduce bullying and save money."' },
+                { h: 'Vocabulary: claim', p: 'A statement that someone argues is true.' },
+                { tip: 'A strong claim has a topic and at least two reasons.' }
               ]
             },
             {
@@ -1533,9 +1533,9 @@ window.LEARNKIT = {
               subject: 'ELA',
               title: 'Reasons + Evidence = Strong Argument',
               blocks: [
-                { type: 'text', text: 'Reasons explain why your claim is true. Evidence is proof, such as facts, examples, or expert opinions.' },
-                { type: 'example', text: 'Claim: Schools should start later. Reason 1: Students need more sleep. Evidence: The American Academy of Pediatrics recommends 8-10 hours.' },
-                { type: 'tip', text: 'Each body paragraph should have one reason and at least one piece of evidence.' }
+                { p: 'Reasons explain why your claim is true. Evidence is proof, such as facts, examples, or expert opinions.' },
+                { example: 'Claim: Schools should start later. Reason 1: Students need more sleep. Evidence: The American Academy of Pediatrics recommends 8-10 hours.' },
+                { tip: 'Each body paragraph should have one reason and at least one piece of evidence.' }
               ]
             },
             {
@@ -1579,9 +1579,9 @@ window.LEARNKIT = {
               subject: 'ELA',
               title: 'Address the Other Side',
               blocks: [
-                { type: 'text', text: 'A counterclaim is the opposite argument. A rebuttal explains why your argument is still stronger.' },
-                { type: 'example', text: 'Counterclaim: Some people say uniforms limit creativity. Rebuttal: However, students can still express themselves through art, writing, and after-school clubs.' },
-                { type: 'vocab', word: 'rebuttal', def: 'A response that proves the counterclaim wrong or weak.' }
+                { p: 'A counterclaim is the opposite argument. A rebuttal explains why your argument is still stronger.' },
+                { example: 'Counterclaim: Some people say uniforms limit creativity. Rebuttal: However, students can still express themselves through art, writing, and after-school clubs.' },
+                { h: 'Vocabulary: rebuttal', p: 'A response that proves the counterclaim wrong or weak.' }
               ]
             },
             {
@@ -1625,9 +1625,9 @@ window.LEARNKIT = {
               subject: 'ELA',
               title: 'Essay Structure',
               blocks: [
-                { type: 'text', text: 'An argumentative essay has 5 parts: hook, claim, body paragraphs with reasons and evidence, counterclaim/rebuttal, and conclusion.' },
-                { type: 'example', text: 'Hook: Imagine starting school at 9 a.m. and feeling awake. Claim: Schools should start later. Body 1: more sleep. Body 2: better grades. Counterclaim: some say it hurts after-school activities. Rebuttal: schools can adjust practice times. Conclusion: restate claim.' },
-                { type: 'tip', text: 'Use formal language. Avoid "I think" or "I feel."' }
+                { p: 'An argumentative essay has 5 parts: hook, claim, body paragraphs with reasons and evidence, counterclaim/rebuttal, and conclusion.' },
+                { example: 'Hook: Imagine starting school at 9 a.m. and feeling awake. Claim: Schools should start later. Body 1: more sleep. Body 2: better grades. Counterclaim: some say it hurts after-school activities. Rebuttal: schools can adjust practice times. Conclusion: restate claim.' },
+                { tip: 'Use formal language. Avoid "I think" or "I feel."' }
               ]
             },
             {
@@ -1682,8 +1682,8 @@ window.LEARNKIT = {
               subject: 'ELA',
               title: 'Teach, Don\'t Argue',
               blocks: [
-                { type: 'text', text: 'Informative writing explains a topic. It does not try to convince the reader of an opinion.' },
-                { type: 'example', text: 'Topic: How do volcanoes erupt? The essay explains the steps using facts.' },
+                { p: 'Informative writing explains a topic. It does not try to convince the reader of an opinion.' },
+                { example: 'Topic: How do volcanoes erupt? The essay explains the steps using facts.' },
                 { type: 'tip', 'text': 'Use a clear topic sentence in each paragraph. Include definitions, examples, and details.' }
               ]
             },
@@ -1729,10 +1729,10 @@ window.LEARNKIT = {
               subject: 'ELA',
               title: 'Patterns of Organization',
               blocks: [
-                { type: 'text', text: 'Use compare/contrast, cause/effect, chronological order, or problem/solution to organize your ideas.' },
-                { type: 'example', text: 'Chronological: First, the seed grows. Next, the plant flowers. Finally, it produces fruit.' },
-                { type: 'example', text: 'Cause/effect: Because students sleep more, they focus better and get higher grades.' },
-                { type: 'vocab', word: 'chronological', def: 'In time order, from first to last.' }
+                { p: 'Use compare/contrast, cause/effect, chronological order, or problem/solution to organize your ideas.' },
+                { example: 'Chronological: First, the seed grows. Next, the plant flowers. Finally, it produces fruit.' },
+                { example: 'Cause/effect: Because students sleep more, they focus better and get higher grades.' },
+                { h: 'Vocabulary: chronological', p: 'In time order, from first to last.' }
               ]
             },
             {
@@ -1778,9 +1778,9 @@ window.LEARNKIT = {
               subject: 'ELA',
               title: 'Strong Beginnings and Endings',
               blocks: [
-                { type: 'text', text: 'A good introduction gives background and a thesis statement. A good conclusion summarizes and leaves the reader thinking.' },
-                { type: 'example', text: 'Topic: Honeybees. Introduction: "Honeybees are small insects that play a huge role in growing our food." Conclusion: "Protecting honeybees helps protect our planet."' },
-                { type: 'tip', text: 'Do not add brand new information in the conclusion.' }
+                { p: 'A good introduction gives background and a thesis statement. A good conclusion summarizes and leaves the reader thinking.' },
+                { example: 'Topic: Honeybees. Introduction: "Honeybees are small insects that play a huge role in growing our food." Conclusion: "Protecting honeybees helps protect our planet."' },
+                { tip: 'Do not add brand new information in the conclusion.' }
               ]
             },
             {
@@ -1824,8 +1824,8 @@ window.LEARNKIT = {
               subject: 'ELA',
               title: 'From Outline to Essay',
               blocks: [
-                { type: 'text', text: 'Start with an outline: introduction, body paragraphs, conclusion. Then expand each section with details.' },
-                { type: 'example', text: 'Topic: How to Grow a Garden. Introduction: why gardens are useful. Body 1: choosing seeds. Body 2: watering and sunlight. Body 3: harvesting. Conclusion: benefits of gardening.' }
+                { p: 'Start with an outline: introduction, body paragraphs, conclusion. Then expand each section with details.' },
+                { example: 'Topic: How to Grow a Garden. Introduction: why gardens are useful. Body 1: choosing seeds. Body 2: watering and sunlight. Body 3: harvesting. Conclusion: benefits of gardening.' }
               ]
             },
             {
@@ -1878,9 +1878,9 @@ window.LEARNKIT = {
               subject: 'ELA',
               title: 'Simple, Compound, Complex',
               blocks: [
-                { type: 'text', text: 'Simple sentence: one independent clause. Compound: two clauses joined with a conjunction. Complex: one independent clause + one dependent clause.' },
-                { type: 'example', text: 'Simple: The cat slept. Compound: The cat slept, and the dog barked. Complex: The cat slept because it was tired.' },
-                { type: 'vocab', word: 'clause', def: 'A group of words with a subject and a verb.' }
+                { p: 'Simple sentence: one independent clause. Compound: two clauses joined with a conjunction. Complex: one independent clause + one dependent clause.' },
+                { example: 'Simple: The cat slept. Compound: The cat slept, and the dog barked. Complex: The cat slept because it was tired.' },
+                { h: 'Vocabulary: clause', p: 'A group of words with a subject and a verb.' }
               ]
             },
             {
@@ -1925,11 +1925,11 @@ window.LEARNKIT = {
               subject: 'ELA',
               title: 'Word Parts',
               blocks: [
-                { type: 'text', text: 'A root is the core meaning of a word. Prefixes and suffixes change the word.' },
-                { type: 'example', text: 'Root "spect" means see. Inspect = look into. Spectator = one who watches.' },
-                { type: 'example', text: 'Root "port" means carry. Transport = carry across. Export = carry out.' },
-                { type: 'vocab', word: 'prefix', def: 'A group of letters added to the beginning of a word.' },
-                { type: 'vocab', word: 'suffix', def: 'A group of letters added to the end of a word.' }
+                { p: 'A root is the core meaning of a word. Prefixes and suffixes change the word.' },
+                { example: 'Root "spect" means see. Inspect = look into. Spectator = one who watches.' },
+                { example: 'Root "port" means carry. Transport = carry across. Export = carry out.' },
+                { h: 'Vocabulary: prefix', p: 'A group of letters added to the beginning of a word.' },
+                { h: 'Vocabulary: suffix', p: 'A group of letters added to the end of a word.' }
               ]
             },
             {
@@ -1975,9 +1975,9 @@ window.LEARNKIT = {
               subject: 'ELA',
               title: 'Similes, Metaphors, Personification',
               blocks: [
-                { type: 'text', text: 'Simile uses "like" or "as." Metaphor says one thing is another. Personification gives human traits to non-human things.' },
-                { type: 'example', text: 'Simile: "Her smile was like sunshine." Metaphor: "Time is a thief." Personification: "The wind whispered through the trees."' },
-                { type: 'vocab', word: 'metaphor', def: 'A comparison without using "like" or "as."' }
+                { p: 'Simile uses "like" or "as." Metaphor says one thing is another. Personification gives human traits to non-human things.' },
+                { example: 'Simile: "Her smile was like sunshine." Metaphor: "Time is a thief." Personification: "The wind whispered through the trees."' },
+                { h: 'Vocabulary: metaphor', p: 'A comparison without using "like" or "as."' }
               ]
             },
             {
@@ -2022,9 +2022,9 @@ window.LEARNKIT = {
               subject: 'ELA',
               title: 'Story Elements',
               blocks: [
-                { type: 'text', text: 'A narrative has characters, setting, plot, conflict, and resolution. Use sensory details and dialogue.' },
-                { type: 'example', text: 'Plot: A girl loses her dog (conflict), searches the neighborhood (rising action), finds him at the park (climax), and brings him home (resolution).' },
-                { type: 'tip', text: 'Show, don\'t tell. Instead of "She was scared," write "Her hands shook and her heart raced."' }
+                { p: 'A narrative has characters, setting, plot, conflict, and resolution. Use sensory details and dialogue.' },
+                { example: 'Plot: A girl loses her dog (conflict), searches the neighborhood (rising action), finds him at the park (climax), and brings him home (resolution).' },
+                { tip: 'Show, don\'t tell. Instead of "She was scared," write "Her hands shook and her heart raced."' }
               ]
             },
             {
