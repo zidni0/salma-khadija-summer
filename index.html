@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salma &amp; Khadija — Summer Bridge to Grade 7</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=1" />
+  <style>
+    .subject-switcher {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+    .subject-switcher button {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 0.03em;
+      padding: 12px 26px;
+      border-radius: 999px;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: transform 0.15s, box-shadow 0.2s, background 0.2s, color 0.2s;
+    }
+    .subject-switcher button:hover { transform: translateY(-2px); }
+    .subject-switcher button.active {
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
+    .btn-math { background: #dbeafe; color: #1e40af; border-color: #93c5fd; }
+    .btn-math.active, .btn-math:hover { background: #2563eb; color: #fff; border-color: #2563eb; }
+    .btn-ela { background: #fef3c7; color: #92400e; border-color: #fcd34d; }
+    .btn-ela.active, .btn-ela:hover { background: #d97706; color: #fff; border-color: #d97706; }
+    .btn-all { background: #f3f4f6; color: #374151; border-color: #d1d5db; }
+    .btn-all.active, .btn-all:hover { background: #4b5563; color: #fff; border-color: #4b5563; }
+    .next-subject-bar {
+      position: fixed;
+      bottom: 22px;
+      right: 22px;
+      z-index: 50;
+      display: none;
+    }
+    .next-subject-bar.visible { display: block; }
+    .next-subject-btn {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 14px;
+      padding: 14px 22px;
+      border-radius: 999px;
+      border: none;
+      background: linear-gradient(135deg, #4f46e5, #7c3aed);
+      color: #fff;
+      box-shadow: 0 8px 22px rgba(79,70,229,0.35);
+      cursor: pointer;
+      transition: transform 0.15s, box-shadow 0.2s;
+    }
+    .next-subject-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(79,70,229,0.45); }
+    .subject-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 8px;
+    }
+    .badge-math { background: #dbeafe; color: #1e40af; }
+    .badge-ela { background: #fef3c7; color: #92400e; }
+    .week-panel.math-panel { border-top: 5px solid #2563eb; }
+    .week-panel.ela-panel { border-top: 5px solid #d97706; }
+  </style>
+</head>
+<body>
+  <main class="summer-wrap" id="learnkit-root">
+    <header class="summer-head">
+      <h1 id="lk-title">Salma &amp; Khadija</h1>
+      <p class="sub" id="lk-subtitle">Summer Bridge to Grade 7 — Math + English</p>
+    </header>
+
+    <div class="progress-bar">
+      <div class="progress-label"><span>Progress</span><span id="lk-progress-text">0 / 0 lessons</span></div>
+      <div class="progress-track"><div class="progress-fill" id="lk-progress-fill"></div></div>
+    </div>
+
+    <div class="subject-switcher" id="subject-switcher">
+      <button type="button" class="btn-all active" data-filter="all">All</button>
+      <button type="button" class="btn-math" data-filter="Math">Math</button>
+      <button type="button" class="btn-ela" data-filter="ELA">English</button>
+    </div>
+
+    <div class="week-nav" id="unit-nav"></div>
+    <div id="learnkit-cards"></div>
+
+    <div class="reset-bar">
+      <button type="button" class="reset-btn" id="reset-progress">Reset Progress</button>
+    </div>
+  </main>
+
+  <div class="next-subject-bar" id="next-subject-bar">
+    <button type="button" class="next-subject-btn" id="next-subject-btn">Switch Subject →</button>
+  </div>
+
+  <script src="content.js?v=1"></script>
+  <script src="engine.js?v=1"></script>
+  <script>
+    (function(){
+      var currentFilter = 'all';
+      var order = ['Math', 'ELA'];
+      var switcher = document.getElementById('subject-switcher');
+      var nextBar = document.getElementById('next-subject-bar');
+      var nextBtn = document.getElementById('next-subject-btn');
+
+      function applyFilter(subject) {
+        currentFilter = subject;
+        document.querySelectorAll('.subject-switcher button').forEach(function(b){
+          b.classList.toggle('active', b.dataset.filter === subject);
+        });
+        var units = document.querySelectorAll('.week-panel');
+        units.forEach(function(u){
+          var su = (u.dataset.subject || '').trim();
+          var show = (subject === 'all' || su === subject);
+          u.style.display = show ? '' : 'none';
+        });
+        document.querySelectorAll('#unit-nav button').forEach(function(b){
+          var bu = (b.dataset.subject || '').trim();
+          var show = (subject === 'all' || bu === subject);
+          b.style.display = show ? '' : 'none';
+        });
+        if (subject !== 'all') {
+          nextBar.classList.add('visible');
+          var idx = order.indexOf(subject);
+          var next = order[(idx + 1) % order.length];
+          nextBtn.textContent = 'Switch to ' + next + ' →';
+          nextBtn.dataset.target = next;
+        } else {
+          nextBar.classList.remove('visible');
+        }
+      }
+
+      switcher.addEventListener('click', function(e){
+        if (e.target.tagName === 'BUTTON' && e.target.dataset.filter) {
+          applyFilter(e.target.dataset.filter);
+        }
+      });
+
+      nextBtn.addEventListener('click', function(){
+        applyFilter(nextBtn.dataset.target);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // Observe when engine renders units and tag them by subject
+      function tagUnits() {
+        var cfg = window.LEARNKIT || {};
+        (cfg.units || []).forEach(function(u, ui){
+          var subject = u.subject || 'Lesson';
+          if (!subject || subject === 'Lesson') {
+            var firstLesson = (u.lessons || [])[0];
+            if (firstLesson && firstLesson.tags && firstLesson.tags.length) subject = firstLesson.tags[0];
+          }
+          var panel = document.querySelector('.week-panel[data-week-panel="' + ui + '"]');
+          if (panel) {
+            panel.dataset.subject = subject;
+            panel.classList.add(subject.toLowerCase() + '-panel');
+            var titleEl = panel.querySelector('.week-panel-title');
+            if (titleEl && !panel.querySelector('.subject-badge')) {
+              var sp = document.createElement('span');
+              sp.className = 'subject-badge badge-' + subject.toLowerCase();
+              sp.textContent = subject;
+              panel.insertBefore(sp, titleEl);
+            }
+          }
+          var navBtn = document.querySelector('#unit-nav button[data-week="' + ui + '"]');
+          if (navBtn) navBtn.dataset.subject = subject;
+        });
+        applyFilter('all');
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function(){ setTimeout(tagUnits, 0); });
+      } else {
+        setTimeout(tagUnits, 0);
+      }
+    })();
+  </script>
+</body>
+</html>
