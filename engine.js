@@ -1187,10 +1187,11 @@
       row.appendChild(inp); row.appendChild(btn);
       host.appendChild(q); host.appendChild(qs); host.appendChild(row); inp.focus();
       function check() {
-        var v = String(inp.value).trim().toLowerCase().replace(/,/g, '');
-        var accept = (g.accept || []).map(function (a) { return String(a).toLowerCase().replace(/,/g, ''); });
+        var v = String(inp.value).trim().toLowerCase().replace(/[,\."'!?;]/g, '').replace(/\s+/g, ' ');
+        var accept = (g.accept || []).map(function (a) { return String(a).toLowerCase().replace(/[,\."'!?;]/g, '').replace(/\s+/g, ' '); });
         if (!v) return;
-        if (accept.indexOf(v) !== -1) {
+        var isOk = accept.some(function (a) { return v === a || v.indexOf(a) !== -1 || a.indexOf(v) !== -1; });
+        if (isOk) {
           sound.play('correct'); SG.praise.show('correct'); fbOk(g.okMsg || 'Got it!');
           inp.disabled = true; btn.disabled = true;
           var next = el('button', 'sg-btn sg-next-btn', 'Next ›');
