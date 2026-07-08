@@ -180,10 +180,17 @@
         applyFilter('all');
       }
 
+      function forceReveal() {
+        // Ensure cards are visible even if IntersectionObserver fails to fire.
+        document.querySelectorAll('.sg-reveal').forEach(function(e){ e.classList.add('is-visible'); });
+        document.querySelectorAll('.sg-stagger').forEach(function(e){ e.classList.add('is-visible'); });
+      }
+
       if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', function(){ setTimeout(tagUnits, 0); });
+        document.addEventListener('DOMContentLoaded', function(){ setTimeout(tagUnits, 0); setTimeout(forceReveal, 800); });
       } else {
         setTimeout(tagUnits, 0);
+        setTimeout(forceReveal, 800);
       }
     })();
   </script>
