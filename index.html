@@ -73,6 +73,8 @@
     .badge-ela { background: #fef3c7; color: #92400e; }
     .week-panel.math-panel { border-top: 5px solid #2563eb; }
     .week-panel.ela-panel { border-top: 5px solid #d97706; }
+    /* Ensure cards are always visible even if IntersectionObserver misses. */
+    .sg-reveal, .sg-stagger > * { opacity: 1 !important; transform: none !important; }
   </style>
 </head>
 <body>
