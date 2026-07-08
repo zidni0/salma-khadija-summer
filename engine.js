@@ -425,7 +425,12 @@
 
   // 3. MATCH (click pairs)
   function renderMatch(stage, c, ctx) {
-    var pairs = c.pairs, n = pairs.length;
+    var pairs = (c.pairs || []).map(function (p) {
+      if (Array.isArray(p)) return p;
+      if (p.left !== undefined && p.right !== undefined) return [p.left, p.right];
+      return [String(p[0]), String(p[1])];
+    });
+    var n = pairs.length;
     var left = shuffle(pairs.map(function (p, i) { return { i: i, text: p[0] }; }));
     var right = shuffle(pairs.map(function (p, i) { return { i: i, text: p[1] }; }));
     var selL = null, selR = null, locked = 0;
@@ -666,7 +671,16 @@
 
   // 8d. CATEGORIZE (tap item, then tap the bin it belongs in)
   function renderCategorize(stage, c, ctx) {
-    var bins = c.bins, items = c.items, placed = 0, sel = null;
+    // Normalize alternate schema: categories/category to bins/bin
+    var bins = c.bins || c.categories || [];
+    var rawItems = c.items || [];
+    var items = rawItems.map(function (it) {
+      var bin = it.bin;
+      if (bin === undefined && it.category !== undefined) bin = bins.indexOf(it.category);
+      if (bin === undefined || bin === -1) bin = 0;
+      return { text: it.text, bin: bin };
+    });
+    var placed = 0, sel = null;
     var wrap = el('div', 'sg-cat');
     var binRow = el('div', 'sg-cat-bins');
     bins.forEach(function (label, bi) {
@@ -1241,11 +1255,17 @@
 
       function renderBlock(bk) {
         var b = el('div', 'sg-les-block sg-reveal');
-        if (bk.h) b.appendChild(el('div', 'sg-les-h', esc(bk.h)));
-        if (bk.p) b.appendChild(el('p', 'sg-les-p', esc(bk.p)));
-        if (bk.diagram) { var d = el('div', 'sg-les-diagram'); d.innerHTML = bk.diagram; b.appendChild(d); }
-        if (bk.example) { var ex = el('div', 'sg-les-example'); ex.innerHTML = '💡 <b>Example:</b> ' + esc(bk.example); b.appendChild(ex); }
-        if (bk.tip) { var tp = el('div', 'sg-les-tip'); tp.innerHTML = '✅ <b>Tip:</b> ' + esc(bk.tip); b.appendChild(tp); }
+        // Fallback: typed block schema used in some course files.
+        var h = bk.h, p = bk.p, example = bk.example, tip = bk.tip, diagram = bk.diagram;
+        if (bk.type === 'text' && bk.text) p = bk.text;
+        if (bk.type === 'example' && bk.text) example = bk.text;
+        if (bk.type === 'tip' && bk.text) tip = bk.text;
+        if (bk.type === 'vocab' && bk.word) { h = 'Vocabulary: ' + bk.word; p = bk.def; }
+        if (h) b.appendChild(el('div', 'sg-les-h', esc(h)));
+        if (p) b.appendChild(el('p', 'sg-les-p', esc(p)));
+        if (diagram) { var d = el('div', 'sg-les-diagram'); d.innerHTML = diagram; b.appendChild(d); }
+        if (example) { var ex = el('div', 'sg-les-example'); ex.innerHTML = '💡 <b>Example:</b> ' + esc(example); b.appendChild(ex); }
+        if (tip) { var tp = el('div', 'sg-les-tip'); tp.innerHTML = '✅ <b>Tip:</b> ' + esc(tip); b.appendChild(tp); }
         body.appendChild(b);
         requestAnimationFrame(function () { b.classList.add('is-visible'); });
         return b;
@@ -1287,7 +1307,15 @@
         function renderQ() {
           bar.textContent = 'Question ' + (qi + 1) + ' of ' + qs.length + ' · Score ' + score;
           host.innerHTML = ''; if (SG.speak) SG.speak.stop();
-          quizInto(host, qs[qi], function (ok) { if (ok) score++; qi++; if (qi < qs.length) renderQ(); else drillDone(); });
+          var q = qs[qi];
+          // Multiple-choice drill (default engine schema)
+          if (q.options && q.options.length) {
+            quizInto(host, q, function (ok) { if (ok) score++; qi++; if (qi < qs.length) renderQ(); else drillDone(); });
+          } else {
+            // Free-text / typed answer fallback
+            var accept = q.accept || (q.a !== undefined ? [String(q.a)] : []);
+            inputInto(host, { prompt: q.prompt || q.q, accept: accept, okMsg: q.okMsg || 'Correct!' }, function (ok) { if (ok) score++; qi++; if (qi < qs.length) renderQ(); else drillDone(); });
+          }
           ringOf(qi, qs.length);
         }
         function drillDone() {
@@ -1361,9 +1389,23 @@
       scene.appendChild(el('div', 'sg-phase-label', '🎯 Activity — ' + esc(ph.title || c.title)));
       scene.appendChild(gtrack); scene.appendChild(sub); scene.appendChild(host);
       function setBlockState(i, state) { var b = gtrack.children[i]; b.className = 'sg-mis-block ' + state; b.querySelector('.blk-ic').textContent = state === 'done' ? '⚡' : (state === 'cur' ? '📍' : '🔒'); }
-      function showStory() { var g = gates[gi]; sub.innerHTML = '<span class="sg-mis-subj">' + esc(g.subject) + '</span> ' + esc(g.story); }
+      function showStory() { var g = gates[gi]; sub.innerHTML = '<span class="sg-mis-subj">' + esc(g.subject || ph.subject || '') + '</span> ' + esc(g.story || g.prompt || g.text || ''); }
       function renderGate() {
-        var g = gates[gi]; fbClear(); showStory(); host.innerHTML = ''; if (SG.speak) SG.speak.stop();
+        var raw = gates[gi];
+        var g = raw;
+        // Fallback: plain { text, answer } stages become typed input gates
+        if (!g.type && (g.answer !== undefined || g.accept)) {
+          g = {
+            type: 'input',
+            subject: raw.subject || ph.subject || '',
+            story: raw.story || 'Solve this.',
+            prompt: raw.prompt || raw.text || '',
+            accept: raw.accept || (raw.answer !== undefined ? [String(raw.answer)] : []),
+            okMsg: raw.okMsg || 'Correct!'
+          };
+        }
+        gates[gi] = g; // persist normalized gate for showStory
+        fbClear(); showStory(); host.innerHTML = ''; if (SG.speak) SG.speak.stop();
         if (g.type === 'quiz') quizInto(host, g, gateDone);
         else if (g.type === 'input') inputInto(host, g, gateDone);
         else if (g.type === 'seek') seekInto(host, g, gateDone);
