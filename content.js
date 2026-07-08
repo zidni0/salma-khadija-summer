@@ -1684,7 +1684,7 @@ window.LEARNKIT = {
               blocks: [
                 { p: 'Informative writing explains a topic. It does not try to convince the reader of an opinion.' },
                 { example: 'Topic: How do volcanoes erupt? The essay explains the steps using facts.' },
-                { type: 'tip', 'text': 'Use a clear topic sentence in each paragraph. Include definitions, examples, and details.' }
+                { tip: 'Use a clear topic sentence in each paragraph. Include definitions, examples, and details.' }
               ]
             },
             {
