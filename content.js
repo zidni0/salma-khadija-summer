@@ -63,15 +63,15 @@ window.LEARNKIT = {
               kind: 'practice',
               subject: 'Math',
               title: 'Sort Hot and Cold',
-              mode: 'sort',
-              buckets: ['Positive', 'Negative', 'Zero'],
+              mode: 'categorize',
+              categories: ['Positive', 'Negative', 'Zero'],
               items: [
-                { text: '+15', bucket: 'Positive' },
-                { text: '-4', bucket: 'Negative' },
-                { text: '0', bucket: 'Zero' },
-                { text: '-22', bucket: 'Negative' },
-                { text: '+3', bucket: 'Positive' },
-                { text: '-100', bucket: 'Negative' }
+                { text: '+15', category: 'Positive' },
+                { text: '-4', category: 'Negative' },
+                { text: '0', category: 'Zero' },
+                { text: '-22', category: 'Negative' },
+                { text: '+3', category: 'Positive' },
+                { text: '-100', category: 'Negative' }
               ]
             },
             {
@@ -228,14 +228,14 @@ window.LEARNKIT = {
               kind: 'practice',
               subject: 'Math',
               title: 'Sign Sort',
-              mode: 'sort',
-              buckets: ['Positive Answer', 'Negative Answer', 'Zero'],
+              mode: 'categorize',
+              categories: ['Positive Answer', 'Negative Answer', 'Zero'],
               items: [
-                { text: '(-5) × (-3)', bucket: 'Positive Answer' },
-                { text: '8 × (-2)', bucket: 'Negative Answer' },
-                { text: '(-12) ÷ 4', bucket: 'Negative Answer' },
-                { text: '(-9) × 0', bucket: 'Zero' },
-                { text: '(-20) ÷ (-5)', bucket: 'Positive Answer' }
+                { text: '(-5) × (-3)', category: 'Positive Answer' },
+                { text: '8 × (-2)', category: 'Negative Answer' },
+                { text: '(-12) ÷ 4', category: 'Negative Answer' },
+                { text: '(-9) × 0', category: 'Zero' },
+                { text: '(-20) ÷ (-5)', category: 'Positive Answer' }
               ]
             },
             {
@@ -651,13 +651,13 @@ window.LEARNKIT = {
               kind: 'practice',
               subject: 'Math',
               title: 'Equation Steps',
-              mode: 'order',
+              mode: 'dragSort',
               items: [
-                { text: '2x + 6 = 14', order: 1 },
-                { text: 'Subtract 6 from both sides', order: 2 },
-                { text: '2x = 8', order: 3 },
-                { text: 'Divide both sides by 2', order: 4 },
-                { text: 'x = 4', order: 5 }
+                { text: '2x + 6 = 14', order: 0 },
+                { text: 'Subtract 6 from both sides', order: 1 },
+                { text: '2x = 8', order: 2 },
+                { text: 'Divide both sides by 2', order: 3 },
+                { text: 'x = 4', order: 4 }
               ]
             },
             {
@@ -855,12 +855,12 @@ window.LEARNKIT = {
               kind: 'practice',
               subject: 'Math',
               title: 'Angle Sort',
-              mode: 'sort',
-              buckets: ['Complementary', 'Supplementary', 'Vertical'],
+              mode: 'categorize',
+              categories: ['Complementary', 'Supplementary', 'Vertical'],
               items: [
-                { text: 'Two angles add to 90°', bucket: 'Complementary' },
-                { text: 'Two angles across from each other at an X', bucket: 'Vertical' },
-                { text: 'Two angles add to 180°', bucket: 'Supplementary' }
+                { text: 'Two angles add to 90°', category: 'Complementary' },
+                { text: 'Two angles across from each other at an X', category: 'Vertical' },
+                { text: 'Two angles add to 180°', category: 'Supplementary' }
               ]
             },
             {
@@ -1253,13 +1253,13 @@ window.LEARNKIT = {
               kind: 'practice',
               subject: 'ELA',
               title: 'Purpose Sort',
-              mode: 'sort',
-              buckets: ['Inform', 'Persuade', 'Entertain'],
+              mode: 'categorize',
+              categories: ['Inform', 'Persuade', 'Entertain'],
               items: [
-                { text: 'A recipe with ingredients and steps', bucket: 'Inform' },
-                { text: 'A funny story about a cat', bucket: 'Entertain' },
-                { text: 'A poster asking you to vote', bucket: 'Persuade' },
-                { text: 'A news article about a storm', bucket: 'Inform' }
+                { text: 'A recipe with ingredients and steps', category: 'Inform' },
+                { text: 'A funny story about a cat', category: 'Entertain' },
+                { text: 'A poster asking you to vote', category: 'Persuade' },
+                { text: 'A news article about a storm', category: 'Inform' }
               ]
             },
             {
@@ -1449,13 +1449,13 @@ window.LEARNKIT = {
               kind: 'practice',
               subject: 'ELA',
               title: 'Build a RACCE Paragraph',
-              mode: 'order',
+              mode: 'dragSort',
               items: [
-                { text: 'Restate the question', order: 1 },
-                { text: 'Answer the question', order: 2 },
-                { text: 'Cite evidence from the text', order: 3 },
-                { text: 'Cite a second piece of evidence', order: 4 },
-                { text: 'Explain how the evidence supports your answer', order: 5 }
+                { text: 'Restate the question', order: 0 },
+                { text: 'Answer the question', order: 1 },
+                { text: 'Cite evidence from the text', order: 2 },
+                { text: 'Cite a second piece of evidence', order: 3 },
+                { text: 'Explain how the evidence supports your answer', order: 4 }
               ]
             },
             {
@@ -1644,14 +1644,14 @@ window.LEARNKIT = {
               kind: 'practice',
               subject: 'ELA',
               title: 'Order the Essay Parts',
-              mode: 'order',
+              mode: 'dragSort',
               items: [
-                { text: 'Hook the reader', order: 1 },
-                { text: 'State your claim', order: 2 },
-                { text: 'Give reason 1 + evidence', order: 3 },
-                { text: 'Give reason 2 + evidence', order: 4 },
-                { text: 'Address counterclaim + rebuttal', order: 5 },
-                { text: 'Conclusion', order: 6 }
+                { text: 'Hook the reader', order: 0 },
+                { text: 'State your claim', order: 1 },
+                { text: 'Give reason 1 + evidence', order: 2 },
+                { text: 'Give reason 2 + evidence', order: 3 },
+                { text: 'Address counterclaim + rebuttal', order: 4 },
+                { text: 'Conclusion', order: 5 }
               ]
             },
             {
@@ -1841,13 +1841,13 @@ window.LEARNKIT = {
               kind: 'practice',
               subject: 'ELA',
               title: 'Essay Part Sort',
-              mode: 'sort',
-              buckets: ['Introduction', 'Body', 'Conclusion'],
+              mode: 'categorize',
+              categories: ['Introduction', 'Body', 'Conclusion'],
               items: [
-                { text: 'Background information about the topic', bucket: 'Introduction' },
-                { text: 'A fact that explains one part of the topic', bucket: 'Body' },
-                { text: 'A final sentence that wraps up the essay', bucket: 'Conclusion' },
-                { text: 'Thesis statement', bucket: 'Introduction' }
+                { text: 'Background information about the topic', category: 'Introduction' },
+                { text: 'A fact that explains one part of the topic', category: 'Body' },
+                { text: 'A final sentence that wraps up the essay', category: 'Conclusion' },
+                { text: 'Thesis statement', category: 'Introduction' }
               ]
             },
             {
