@@ -646,3 +646,28 @@ body { max-width: 880px; margin: 0 auto; padding: 28px 18px 60px; }
 .reset-btn:hover { background: #c0392b; color: #fff; }
 
 @media (max-width: 720px) { body { padding: 18px 12px 50px; } }
+
+/* === visible question/practice codes for students === */
+.sg-q-code,
+.sg-card-code {
+  display: inline-block;
+  font-family: var(--sg-head);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: #f3e8ff;
+  color: #6b21a8;
+  border: 1.5px solid #d8b4fe;
+  margin-bottom: 8px;
+}
+.sg-card-code {
+  display: block;
+  width: fit-content;
+  margin: 0 auto 6px;
+  font-size: 10px;
+}
+.sg-quiz-q .sg-q-code { display: block; margin: 0 auto 10px; width: fit-content; }
+.sg-nl-prompt + .sg-q-code { display: block; }

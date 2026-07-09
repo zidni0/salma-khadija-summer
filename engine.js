@@ -22,6 +22,16 @@
   function rnd(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
   function shuffle(a) { a = a.slice(); for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
   function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
+  function questionText(g) { return g && (g.prompt != null ? g.prompt : g.q); }
+  function codeBadge(g) {
+    if (!g || !g.code) return null;
+    return el('div', 'sg-q-code', esc(g.code));
+  }
+  function appendBadge(host, g) {
+    var badge = codeBadge(g);
+    if (badge) host.appendChild(badge);
+    return badge;
+  }
 
   /* ---------- storage keys (per-deployment, namespaced by course id) ---------- */
   var COURSE_ID = (window.LEARNKIT && window.LEARNKIT.id) ? String(window.LEARNKIT.id) : "default";
@@ -331,6 +341,7 @@
 
   // 1. SCRATCH
   function renderScratch(stage, c, ctx) {
+    appendBadge(stage, c);
     var box = el('div', 'sg-scratch');
     var answer = el('div', 'answer', esc(c.fact));
     var canvas = el('canvas');
@@ -360,6 +371,7 @@
 
   // 2. WORD SEARCH (pointer drag)
   function renderWordSearch(stage, c, ctx) {
+    appendBadge(stage, c);
     var SIZE = 10, words = c.words.slice();
     var grid = [], found = new Set(), sel = [], startCell = null, dragging = false;
     function place() {
@@ -427,16 +439,16 @@
   function renderMatch(stage, c, ctx) {
     var pairs = (c.pairs || []).map(function (p) {
       if (Array.isArray(p)) return p;
-      if (p.left !== undefined && p.right !== undefined) return [p.left, p.right];
-      return [String(p[0]), String(p[1])];
+      if (p.left !== undefined && p.right !== undefined) return [p.left, p.right, p.code];
+      return [String(p[0]), String(p[1]), p.code];
     });
     var n = pairs.length;
-    var left = shuffle(pairs.map(function (p, i) { return { i: i, text: p[0] }; }));
+    var left = shuffle(pairs.map(function (p, i) { return { i: i, text: p[0], code: p[2] }; }));
     var right = shuffle(pairs.map(function (p, i) { return { i: i, text: p[1] }; }));
     var selL = null, selR = null, locked = 0;
     var wrap = el('div', 'sg-match');
     var lc = el('div'); lc.appendChild(el('div', 'col-title', 'Words'));
-    var ulL = el('ul'); left.forEach(function (it) { var li = el('li'); li.dataset.i = it.i; li.innerHTML = '<span>' + esc(it.text) + '</span>'; ulL.appendChild(li); }); lc.appendChild(ulL);
+    var ulL = el('ul'); left.forEach(function (it) { var li = el('li'); li.dataset.i = it.i; li.innerHTML = (it.code ? '<div class="sg-card-code">' + esc(it.code) + '</div>' : '') + '<span>' + esc(it.text) + '</span>'; ulL.appendChild(li); }); lc.appendChild(ulL);
     var rc = el('div'); rc.appendChild(el('div', 'col-title', 'Meanings'));
     var ulR = el('ul'); right.forEach(function (it) { var li = el('li'); li.dataset.i = it.i; li.innerHTML = '<span>' + esc(it.text) + '</span>'; ulR.appendChild(li); }); rc.appendChild(ulR);
     wrap.appendChild(lc); wrap.appendChild(rc); stage.appendChild(wrap);
@@ -461,7 +473,7 @@
   function renderDragSort(stage, c, ctx) {
     var items = shuffle(c.items);
     var list = el('div', 'sg-sort');
-    var nodeFor = function (it) { var n2 = el('div', 'sg-sort-item', esc(it.text)); n2.dataset.order = it.order; return n2; };
+    var nodeFor = function (it) { var n2 = el('div', 'sg-sort-item'); if (it.code) n2.appendChild(el('div', 'sg-card-code', esc(it.code))); n2.appendChild(document.createTextNode(it.text)); n2.dataset.order = it.order; return n2; };
     items.forEach(function (it) { list.appendChild(nodeFor(it)); });
     var checkBtn = el('button', 'sg-btn accent', 'Check Order');
     list.appendChild(checkBtn);
@@ -502,7 +514,9 @@
     var cards = c.cards, seen = 0;
     var grid = el('div', 'sg-flip-grid');
     cards.forEach(function (card) {
-      var f = el('div', 'sg-flip'); f.innerHTML = '<div class="flip-inner"><div class="flip-front">' + esc(card.front) + '</div><div class="flip-back">' + esc(card.back) + '</div></div>';
+      var f = el('div', 'sg-flip');
+      var frontHtml = (card.code ? '<div class="sg-card-code">' + esc(card.code) + '</div>' : '') + esc(card.front);
+      f.innerHTML = '<div class="flip-inner"><div class="flip-front">' + frontHtml + '</div><div class="flip-back">' + esc(card.back) + '</div></div>';
       f.addEventListener('click', function () { if (f.classList.contains('flipped')) return; f.classList.add('flipped', 'seen'); sound.play('click'); seen++; ctx.setRing(ringPctOf(seen, cards.length)); if (seen === cards.length) { SG.praise.show('correct'); ctx.onWin(); } });
       grid.appendChild(f);
     });
@@ -511,6 +525,7 @@
 
   // 6. HANGMAN
   function renderHangman(stage, c, ctx) {
+    appendBadge(stage, c);
     var answer = c.word.toLowerCase(), guessed = [], wrong = 0, MAX = 6, over = false, won = false;
     var wrap = el('div', 'sg-hang');
     var hint = el('div', 'sg-hang-hint', 'Hint: ' + esc(c.hint));
@@ -543,6 +558,7 @@
 
   // 7. FILL BLANK (click-to-fill, touch friendly)
   function renderFillBlank(stage, c, ctx) {
+    appendBadge(stage, c);
     var parts = c.sentence.split('*'), blanks = c.blanks, answers = new Array(blanks.length).fill(null), checked = false;
     var sentenceEl = el('div', 'sg-fb-sentence'); var slots = [];
     parts.forEach(function (p, i) { sentenceEl.appendChild(document.createTextNode(p)); if (i < blanks.length) { var s = el('span', 'sg-fb-slot', '____'); s.dataset.i = i; s.addEventListener('click', function () { answers[i] = null; s.textContent = '____'; s.classList.remove('filled', 'wrong'); checkUsed(); }); sentenceEl.appendChild(s); slots.push(s); } });
@@ -572,7 +588,10 @@
     var nextBtn = el('button', 'sg-btn', 'Next ›'); nextBtn.style.display = 'none'; nextWrap.appendChild(nextBtn);
     stage.appendChild(scoreEl); stage.appendChild(prog); stage.appendChild(qEl); stage.appendChild(opts); stage.appendChild(nextWrap);
     function render() {
-      answered = false; prog.textContent = 'Statement ' + (i + 1) + ' of ' + qs.length; qEl.textContent = qs[i].t; opts.innerHTML = '';
+      answered = false; prog.textContent = 'Statement ' + (i + 1) + ' of ' + qs.length;
+      var cur = qs[i];
+      qEl.innerHTML = ''; appendBadge(qEl, cur); qEl.appendChild(document.createTextNode(cur.t || ''));
+      opts.innerHTML = '';
       [true, false].forEach(function (val) {
         var b = el('button', 'sg-tf-opt'); b.innerHTML = '<span class="txt">' + esc(val ? 'True' : 'False') + '</span><span class="ic"></span>';
         b.addEventListener('click', function () { select(val, b); });
@@ -600,6 +619,7 @@
 
   // 8b. SCRAMBLE (tap word tiles to rebuild a sentence)
   function renderScramble(stage, c, ctx) {
+    appendBadge(stage, c);
     var correct = c.words.slice();
     var placed = new Array(correct.length).fill(null);
     var slots = [], poolTiles = [];
@@ -658,7 +678,10 @@
     });
     var pool = el('div', 'sg-tl-pool');
     shuffle(events.map(function (e, i) { return { e: e, i: i }; })).forEach(function (o) {
-      var card = el('div', 'sg-tl-card', esc(o.e.text)); card.dataset.i = o.i;
+      var card = el('div', 'sg-tl-card');
+      if (o.e.code) card.appendChild(el('div', 'sg-card-code', esc(o.e.code)));
+      card.appendChild(document.createTextNode(o.e.text));
+      card.dataset.i = o.i;
       card.addEventListener('click', function () {
         if (card.classList.contains('placed')) return;
         if (sel) sel.classList.remove('sel');
@@ -678,7 +701,7 @@
       var bin = it.bin;
       if (bin === undefined && it.category !== undefined) bin = bins.indexOf(it.category);
       if (bin === undefined || bin === -1) bin = 0;
-      return { text: it.text, bin: bin };
+      return { text: it.text, bin: bin, code: it.code };
     });
     var placed = 0, sel = null;
     var wrap = el('div', 'sg-cat');
@@ -700,7 +723,10 @@
     });
     var pool = el('div', 'sg-cat-pool');
     shuffle(items.map(function (it, i) { return { it: it, i: i }; })).forEach(function (o) {
-      var card = el('div', 'sg-cat-card', esc(o.it.text)); card.dataset.i = o.i;
+      var card = el('div', 'sg-cat-card');
+      if (o.it.code) card.appendChild(el('div', 'sg-card-code', esc(o.it.code)));
+      card.appendChild(document.createTextNode(o.it.text));
+      card.dataset.i = o.i;
       card.addEventListener('click', function () {
         if (card.classList.contains('placed')) return;
         if (sel) sel.classList.remove('sel');
@@ -715,10 +741,12 @@
   function renderTwoTruths(stage, c, ctx) {
     var stmts = c.statements, solved = false;
     var wrap = el('div', 'sg-ttl');
+    appendBadge(wrap, c);
     wrap.appendChild(el('div', 'sg-ttl-prompt', 'One statement is FALSE. Tap the lie.'));
     var grid = el('div', 'sg-ttl-grid');
     stmts.forEach(function (s) {
-      var b = el('button', 'sg-ttl-item'); b.innerHTML = '<span class="ic"></span><span class="txt">' + esc(s.t) + '</span>';
+      var b = el('button', 'sg-ttl-item');
+      b.innerHTML = (s.code ? '<div class="sg-card-code">' + esc(s.code) + '</div>' : '') + '<span class="ic"></span><span class="txt">' + esc(s.t) + '</span>';
       b.addEventListener('click', function () {
         if (solved) return;
         if (!s.a) {
@@ -740,6 +768,7 @@
   function renderLabelDiagram(stage, c, ctx) {
     var slots = c.slots, labels = c.labels, placed = 0, sel = null;
     var wrap = el('div', 'sg-label');
+    appendBadge(wrap, c);
     var dia = el('div', 'sg-label-diagram');
     slots.forEach(function (sl, si) {
       (function (si) {
@@ -801,7 +830,10 @@
     wrap.appendChild(dia); wrap.appendChild(neither);
     var pool = el('div', 'sg-venn-pool');
     shuffle(items.map(function (it, i) { return { it: it, i: i }; })).forEach(function (o) {
-      var card = el('div', 'sg-venn-card', esc(o.it.text)); card.dataset.i = o.i;
+      var card = el('div', 'sg-venn-card');
+      if (o.it.code) card.appendChild(el('div', 'sg-card-code', esc(o.it.code)));
+      card.appendChild(document.createTextNode(o.it.text));
+      card.dataset.i = o.i;
       card.addEventListener('click', function () {
         if (card.classList.contains('placed')) return;
         if (sel) sel.classList.remove('sel');
@@ -819,7 +851,8 @@
     function renderQ() {
       wrap.innerHTML = '';
       var q = qs[qi];
-      wrap.appendChild(el('div', 'sg-nl-prompt', esc(q.prompt)));
+      appendBadge(wrap, q);
+      wrap.appendChild(el('div', 'sg-nl-prompt', esc(questionText(q) || '')));
       var line = el('div', 'sg-nl-line');
       q.marks.forEach(function (m, mi) {
         (function (mi) {
@@ -851,6 +884,7 @@
   function renderHigherLower(stage, c, ctx) {
     var cards = c.cards, i = 0, solved = false;
     var wrap = el('div', 'sg-nl');
+    appendBadge(wrap, c);
     wrap.appendChild(el('div', 'sg-nl-prompt', esc(c.prompt || 'Will the next card be higher or lower?')));
     var stage2 = el('div', 'sg-hl-stage'); wrap.appendChild(stage2);
     var ctrl = el('div', 'sg-hl-ctrl');
@@ -889,7 +923,8 @@
     function renderQ() {
       wrap.innerHTML = '';
       var q = qs[qi];
-      wrap.appendChild(el('div', 'sg-fb2-prompt', esc(q.prompt)));
+      appendBadge(wrap, q);
+      wrap.appendChild(el('div', 'sg-fb2-prompt', esc(questionText(q) || '')));
       var bar = el('div', 'sg-fb2-bar');
       var segs = [];
       for (var s = 0; s < q.denom; s++) {
@@ -919,6 +954,7 @@
 
   // 8k. CROSSWORD (mini grid; type each clue's answer, letters fill the grid)
   function renderCrossword(stage, c, ctx) {
+    appendBadge(stage, c);
     var cols = c.cols, rows = c.rows, words = c.words;
     var blocked = {}; c.blocks.forEach(function (i) { blocked[i] = true; });
     var letter = {}; words.forEach(function (w) { w.answer.split('').forEach(function (ch, k) { letter[w.cells[k]] = ch; }); });
@@ -958,6 +994,7 @@
 
   // 8l. CLOZE (passage with per-blank drop-down choices)
   function renderCloze(stage, c, ctx) {
+    appendBadge(stage, c);
     var parts = c.text.split('*'), blanks = c.blanks, done = 0;
     var wrap = el('div', 'sg-cloze');
     var body = el('div', 'sg-cloze-body');
@@ -991,6 +1028,7 @@
     var wall = {}; c.walls.forEach(function (i) { wall[i] = true; });
     var path = [start], solved = false;
     var wrap = el('div', 'sg-nl');
+    appendBadge(wrap, c);
     wrap.appendChild(el('div', 'sg-nl-prompt', esc(c.prompt || 'Tap a next cell to build a path to the goal.')));
     var grid = el('div', 'sg-maze'); grid.style.gridTemplateColumns = 'repeat(' + cols + ', 1fr)';
     var cellEls = [];
@@ -1042,7 +1080,10 @@
     var list = el('div', 'sg-crypt-list');
     clues.forEach(function (cl, ci) {
       var row = el('div', 'sg-crypt-row');
-      row.appendChild(el('div', 'sg-crypt-q', esc(cl.prompt)));
+      var qWrap = el('div', 'sg-crypt-q');
+      appendBadge(qWrap, cl);
+      qWrap.appendChild(document.createTextNode(cl.prompt || ''));
+      row.appendChild(qWrap);
       var opts = el('div', 'sg-crypt-opts'); var answered = false;
       cl.options.forEach(function (txt, oi) {
         var b = el('button', 'sg-mis-opt'); b.innerHTML = '<span class="txt">' + esc(txt) + '</span><span class="ic"></span>';
@@ -1077,8 +1118,11 @@
     var nextBtn = el('button', 'sg-btn', 'Next ›'); nextBtn.style.display = 'none'; nextWrap.appendChild(nextBtn);
     stage.appendChild(scoreEl); stage.appendChild(prog); stage.appendChild(qEl); stage.appendChild(opts); stage.appendChild(nextWrap);
     function render() {
-      answered = false; prog.textContent = 'Question ' + (i + 1) + ' of ' + qs.length; qEl.textContent = qs[i].q; opts.innerHTML = '';
-      qs[i].options.forEach(function (txt, idx) {
+      answered = false; prog.textContent = 'Question ' + (i + 1) + ' of ' + qs.length;
+      var cur = qs[i];
+      qEl.innerHTML = ''; appendBadge(qEl, cur); qEl.appendChild(document.createTextNode(questionText(cur) || ''));
+      opts.innerHTML = '';
+      cur.options.forEach(function (txt, idx) {
         var b = el('button', 'sg-quiz-opt'); b.innerHTML = '<span class="txt">' + esc(txt) + '</span><span class="ic"></span>';
         b.addEventListener('click', function () { select(idx, b); });
         opts.appendChild(b);
@@ -1152,7 +1196,9 @@
 
     // ---------- reusable gate renderers (render into `host`, call onDone) ----------
     function quizInto(host, g, onDone) {
-      var q = el('div', 'sg-mis-q', esc(g.prompt));
+      var promptText = questionText(g) || '';
+      appendBadge(host, g);
+      var q = el('div', 'sg-mis-q', esc(promptText));
       var opts = el('div', 'sg-mis-opts');
       var answered = false;
       g.options.forEach(function (txt, idx) {
@@ -1172,15 +1218,17 @@
       });
       host.appendChild(q);
       var qs = el('button', 'sg-q-speak'); qs.type = 'button'; qs.innerHTML = '🔊'; qs.setAttribute('aria-label', 'Read question aloud');
-      qs.addEventListener('click', function (e) { e.preventDefault(); var t = g.prompt || ''; if (g.options) t += '. ' + g.options.join(', '); SG.speak.toggle(t, qs); });
+      qs.addEventListener('click', function (e) { e.preventDefault(); var t = promptText; if (g.options) t += '. ' + g.options.join(', '); SG.speak.toggle(t, qs); });
       host.appendChild(qs);
       host.appendChild(opts);
     }
 
     function inputInto(host, g, onDone) {
-      var q = el('div', 'sg-mis-q', esc(g.prompt));
+      var promptText = questionText(g) || '';
+      appendBadge(host, g);
+      var q = el('div', 'sg-mis-q', esc(promptText));
       var qs = el('button', 'sg-q-speak'); qs.type = 'button'; qs.innerHTML = '🔊'; qs.setAttribute('aria-label', 'Read question aloud');
-      qs.addEventListener('click', function (e) { e.preventDefault(); SG.speak.toggle(g.prompt || '', qs); });
+      qs.addEventListener('click', function (e) { e.preventDefault(); SG.speak.toggle(promptText, qs); });
       var row = el('div', 'sg-mis-input-row');
       var inp = el('input', 'sg-mis-input'); inp.type = 'text'; inp.setAttribute('autocomplete', 'off'); inp.placeholder = 'Type your answer…';
       var btn = el('button', 'sg-btn', 'Check ▸');
@@ -1204,7 +1252,9 @@
     }
 
     function seekInto(host, g, onDone) {
-      var q = el('div', 'sg-mis-q', esc(g.prompt));
+      var promptText = questionText(g) || '';
+      appendBadge(host, g);
+      var q = el('div', 'sg-mis-q', esc(promptText));
       var grid = el('div', 'sg-mis-seek');
       var found = {};
       host.appendChild(q); host.appendChild(grid);
