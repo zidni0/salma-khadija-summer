@@ -1,7 +1,7 @@
 /* === SALMA KHADIJA SUMMER — SUMMER BRIDGE === */
 window.LEARNKIT = {
   "id": "salma-khadija-g7-summer",
-  "title": "Salma & Khadija — Summer Bridge to Grade 7",
+  "title": "Salma & Khadija \u2014 Summer Bridge to Grade 7",
   "subtitle": "Math + English practice. Pick your subject for today. Read aloud, play games, write, and grow.",
   "sequential": false,
   "unitLabel": "Unit",
@@ -18,7 +18,7 @@ window.LEARNKIT = {
   },
   "mascot": {
     "name": "Nova",
-    "emoji": "🌟",
+    "emoji": "\ud83c\udf1f",
     "color": "#4f46e5"
   },
   "units": [
@@ -29,7 +29,7 @@ window.LEARNKIT = {
         {
           "title": "What Are Integers?",
           "intro": "Whole numbers and their opposites. We use them for temperature, money, and elevation.",
-          "winText": "🎉 You mastered the number line!",
+          "winText": "\ud83c\udf89 You mastered the number line!",
           "tags": [
             "Math"
           ],
@@ -43,7 +43,7 @@ window.LEARNKIT = {
                   "p": "Integers are whole numbers and their opposites: ..., -2, -1, 0, 1, 2, ..."
                 },
                 {
-                  "example": "If it is 5°C above zero, we write +5. If it is 3°C below zero, we write -3."
+                  "example": "If it is 5\u00b0C above zero, we write +5. If it is 3\u00b0C below zero, we write -3."
                 },
                 {
                   "h": "Vocabulary: integer",
@@ -163,7 +163,7 @@ window.LEARNKIT = {
         {
           "title": "Adding Integers",
           "intro": "Learn to add positive and negative numbers using the number line and simple rules.",
-          "winText": "🎉 You can add integers!",
+          "winText": "\ud83c\udf89 You can add integers!",
           "tags": [
             "Math"
           ],
@@ -287,7 +287,7 @@ window.LEARNKIT = {
         {
           "title": "Subtracting Integers",
           "intro": "Subtraction is just adding the opposite. Turn every subtraction problem into an addition problem.",
-          "winText": "🎉 You can subtract integers!",
+          "winText": "\ud83c\udf89 You can subtract integers!",
           "tags": [
             "Math"
           ],
@@ -389,17 +389,17 @@ window.LEARNKIT = {
               "title": "Thermometer Mission",
               "stages": [
                 {
-                  "text": "[U01-L03-Q06] Morning temperature is -2°C. By noon it is 7°C. How much did it rise? Use subtraction.",
+                  "text": "[U01-L03-Q06] Morning temperature is -2\u00b0C. By noon it is 7\u00b0C. How much did it rise? Use subtraction.",
                   "answer": "9",
                   "code": "U01-L03-Q06"
                 },
                 {
-                  "text": "[U01-L03-Q07] Temperature is 5°C. It drops 11 degrees. What is the new temperature?",
+                  "text": "[U01-L03-Q07] Temperature is 5\u00b0C. It drops 11 degrees. What is the new temperature?",
                   "answer": "-6",
                   "code": "U01-L03-Q07"
                 },
                 {
-                  "text": "[U01-L03-Q08] Temperature is -8°C. It rises 8 degrees. What is the new temperature?",
+                  "text": "[U01-L03-Q08] Temperature is -8\u00b0C. It rises 8 degrees. What is the new temperature?",
                   "answer": "0",
                   "code": "U01-L03-Q08"
                 }
@@ -410,7 +410,7 @@ window.LEARNKIT = {
         {
           "title": "Multiplying & Dividing Integers",
           "intro": "Sign rules first, then multiply or divide the numbers normally.",
-          "winText": "🎉 You can multiply and divide integers!",
+          "winText": "\ud83c\udf89 You can multiply and divide integers!",
           "tags": [
             "Math"
           ],
@@ -424,13 +424,13 @@ window.LEARNKIT = {
                   "p": "Same signs = positive answer. Different signs = negative answer."
                 },
                 {
-                  "example": "(-3) × (-4) = 12 (same signs, positive)"
+                  "example": "(-3) \u00d7 (-4) = 12 (same signs, positive)"
                 },
                 {
-                  "example": "(-3) × 4 = -12 (different signs, negative)"
+                  "example": "(-3) \u00d7 4 = -12 (different signs, negative)"
                 },
                 {
-                  "example": "-20 ÷ 5 = -4 (different signs, negative)"
+                  "example": "-20 \u00f7 5 = -4 (different signs, negative)"
                 },
                 {
                   "tip": "An even number of negative signs gives a positive answer. An odd number gives negative."
@@ -443,31 +443,31 @@ window.LEARNKIT = {
               "title": "Multiply and Divide",
               "questions": [
                 {
-                  "q": "[U01-L04-Q01] (-6) × 3 = ?",
+                  "q": "[U01-L04-Q01] (-6) \u00d7 3 = ?",
                   "a": "-18",
                   "type": "text",
                   "code": "U01-L04-Q01"
                 },
                 {
-                  "q": "[U01-L04-Q02] (-7) × (-2) = ?",
+                  "q": "[U01-L04-Q02] (-7) \u00d7 (-2) = ?",
                   "a": "14",
                   "type": "text",
                   "code": "U01-L04-Q02"
                 },
                 {
-                  "q": "[U01-L04-Q03] 24 ÷ (-6) = ?",
+                  "q": "[U01-L04-Q03] 24 \u00f7 (-6) = ?",
                   "a": "-4",
                   "type": "text",
                   "code": "U01-L04-Q03"
                 },
                 {
-                  "q": "[U01-L04-Q04] (-35) ÷ (-7) = ?",
+                  "q": "[U01-L04-Q04] (-35) \u00f7 (-7) = ?",
                   "a": "5",
                   "type": "text",
                   "code": "U01-L04-Q04"
                 },
                 {
-                  "q": "[U01-L04-Q05] (-9) × 0 = ?",
+                  "q": "[U01-L04-Q05] (-9) \u00d7 0 = ?",
                   "a": "0",
                   "type": "text",
                   "code": "U01-L04-Q05"
@@ -486,27 +486,27 @@ window.LEARNKIT = {
               ],
               "items": [
                 {
-                  "text": "(-5) × (-3)",
+                  "text": "(-5) \u00d7 (-3)",
                   "category": "Positive Answer",
                   "code": "U01-L04-P01"
                 },
                 {
-                  "text": "8 × (-2)",
+                  "text": "8 \u00d7 (-2)",
                   "category": "Negative Answer",
                   "code": "U01-L04-P02"
                 },
                 {
-                  "text": "(-12) ÷ 4",
+                  "text": "(-12) \u00f7 4",
                   "category": "Negative Answer",
                   "code": "U01-L04-P03"
                 },
                 {
-                  "text": "(-9) × 0",
+                  "text": "(-9) \u00d7 0",
                   "category": "Zero",
                   "code": "U01-L04-P04"
                 },
                 {
-                  "text": "(-20) ÷ (-5)",
+                  "text": "(-20) \u00f7 (-5)",
                   "category": "Positive Answer",
                   "code": "U01-L04-P05"
                 }
@@ -544,7 +544,7 @@ window.LEARNKIT = {
         {
           "title": "Understanding Ratios",
           "intro": "A ratio compares two quantities. It tells us \"for every\" or \"out of.\"",
-          "winText": "🎉 You can read and write ratios!",
+          "winText": "\ud83c\udf89 You can read and write ratios!",
           "tags": [
             "Math"
           ],
@@ -663,7 +663,7 @@ window.LEARNKIT = {
         {
           "title": "Unit Rates",
           "intro": "A unit rate tells you how much for one. It makes comparisons easy.",
-          "winText": "🎉 You can find unit rates!",
+          "winText": "\ud83c\udf89 You can find unit rates!",
           "tags": [
             "Math"
           ],
@@ -677,10 +677,10 @@ window.LEARNKIT = {
                   "p": "A rate compares two different quantities. A unit rate has a denominator of 1."
                 },
                 {
-                  "example": "If 4 sandwiches cost $12, the unit price is $12 ÷ 4 = $3 per sandwich."
+                  "example": "If 4 sandwiches cost $12, the unit price is $12 \u00f7 4 = $3 per sandwich."
                 },
                 {
-                  "example": "A car drives 180 miles in 3 hours. Unit rate = 180 ÷ 3 = 60 miles per hour."
+                  "example": "A car drives 180 miles in 3 hours. Unit rate = 180 \u00f7 3 = 60 miles per hour."
                 },
                 {
                   "h": "Vocabulary: unit rate",
@@ -726,27 +726,27 @@ window.LEARNKIT = {
               "mode": "match",
               "pairs": [
                 {
-                  "left": "6 apples for $3 → per apple",
+                  "left": "6 apples for $3 \u2192 per apple",
                   "right": "$0.50",
                   "code": "U02-L02-P01"
                 },
                 {
-                  "left": "10 apples for $5 → per apple",
+                  "left": "10 apples for $5 \u2192 per apple",
                   "right": "$0.50",
                   "code": "U02-L02-P02"
                 },
                 {
-                  "left": "4 bottles for $8 → per bottle",
+                  "left": "4 bottles for $8 \u2192 per bottle",
                   "right": "$2.00",
                   "code": "U02-L02-P03"
                 },
                 {
-                  "left": "5 bottles for $10 → per bottle",
+                  "left": "5 bottles for $10 \u2192 per bottle",
                   "right": "$2.00",
                   "code": "U02-L02-P04"
                 },
                 {
-                  "left": "3 hours for $45 → per hour",
+                  "left": "3 hours for $45 \u2192 per hour",
                   "right": "$15",
                   "code": "U02-L02-P05"
                 }
@@ -773,7 +773,7 @@ window.LEARNKIT = {
         {
           "title": "Proportional Relationships",
           "intro": "When two quantities grow or shrink together at the same rate, they are proportional.",
-          "winText": "🎉 You found proportional relationships!",
+          "winText": "\ud83c\udf89 You found proportional relationships!",
           "tags": [
             "Math"
           ],
@@ -787,11 +787,11 @@ window.LEARNKIT = {
                   "p": "A proportional relationship passes through (0,0) on a graph and has a constant ratio."
                 },
                 {
-                  "example": "If 1 apple costs $2, then 2 apples cost $4, 3 apples cost $6. The equation is cost = 2 × apples."
+                  "example": "If 1 apple costs $2, then 2 apples cost $4, 3 apples cost $6. The equation is cost = 2 \u00d7 apples."
                 },
                 {
                   "h": "Vocabulary: constant of proportionality",
-                  "p": "The number you multiply one quantity by to get the other. In cost = 2 × apples, the constant is 2."
+                  "p": "The number you multiply one quantity by to get the other. In cost = 2 \u00d7 apples, the constant is 2."
                 },
                 {
                   "tip": "Check a table by dividing each pair. If the answer is always the same, it is proportional."
@@ -865,7 +865,7 @@ window.LEARNKIT = {
                   "code": "U02-L03-Q05"
                 },
                 {
-                  "text": "[U02-L03-Q06] Write the equation: cookies = ___ × batches.",
+                  "text": "[U02-L03-Q06] Write the equation: cookies = ___ \u00d7 batches.",
                   "answer": "24",
                   "code": "U02-L03-Q06"
                 }
@@ -876,7 +876,7 @@ window.LEARNKIT = {
         {
           "title": "Percent Problems",
           "intro": "Percents are ratios out of 100. We use them for tax, tips, discounts, and growth.",
-          "winText": "🎉 You solved percent problems!",
+          "winText": "\ud83c\udf89 You solved percent problems!",
           "tags": [
             "Math"
           ],
@@ -890,10 +890,10 @@ window.LEARNKIT = {
                   "p": "Percent means \"per 100.\" 20% = 20/100 = 0.20."
                 },
                 {
-                  "example": "20% of $50 = 0.20 × 50 = $10."
+                  "example": "20% of $50 = 0.20 \u00d7 50 = $10."
                 },
                 {
-                  "example": "A $80 shirt is 25% off. Discount = 0.25 × 80 = $20. Sale price = $60."
+                  "example": "A $80 shirt is 25% off. Discount = 0.25 \u00d7 80 = $20. Sale price = $60."
                 },
                 {
                   "tip": "To find a percent of a number, change the percent to a decimal, then multiply."
@@ -990,7 +990,7 @@ window.LEARNKIT = {
         {
           "title": "Percent Change",
           "intro": "Percent change tells us how much a number went up or down compared to the original.",
-          "winText": "🎉 You can find percent increase and decrease!",
+          "winText": "\ud83c\udf89 You can find percent increase and decrease!",
           "tags": [
             "Math"
           ],
@@ -1001,13 +1001,13 @@ window.LEARNKIT = {
               "title": "Percent Increase & Decrease",
               "blocks": [
                 {
-                  "p": "Percent change = (change amount ÷ original amount) × 100."
+                  "p": "Percent change = (change amount \u00f7 original amount) \u00d7 100."
                 },
                 {
-                  "example": "A plant grew from 20 cm to 25 cm. Change = 5. Percent increase = (5 ÷ 20) × 100 = 25%."
+                  "example": "A plant grew from 20 cm to 25 cm. Change = 5. Percent increase = (5 \u00f7 20) \u00d7 100 = 25%."
                 },
                 {
-                  "example": "A price drops from $80 to $68. Change = $12. Percent decrease = (12 ÷ 80) × 100 = 15%."
+                  "example": "A price drops from $80 to $68. Change = $12. Percent decrease = (12 \u00f7 80) \u00d7 100 = 15%."
                 },
                 {
                   "tip": "Always divide by the original amount, not the new amount."
@@ -1050,22 +1050,22 @@ window.LEARNKIT = {
               ],
               "items": [
                 {
-                  "text": "40 → 50",
+                  "text": "40 \u2192 50",
                   "category": "Percent Increase",
                   "code": "U02-L05-P01"
                 },
                 {
-                  "text": "80 → 60",
+                  "text": "80 \u2192 60",
                   "category": "Percent Decrease",
                   "code": "U02-L05-P02"
                 },
                 {
-                  "text": "25 → 30",
+                  "text": "25 \u2192 30",
                   "category": "Percent Increase",
                   "code": "U02-L05-P03"
                 },
                 {
-                  "text": "100 → 85",
+                  "text": "100 \u2192 85",
                   "category": "Percent Decrease",
                   "code": "U02-L05-P04"
                 }
@@ -1098,7 +1098,7 @@ window.LEARNKIT = {
         {
           "title": "Algebraic Expressions",
           "intro": "Use letters to stand for unknown numbers. Then combine and simplify.",
-          "winText": "🎉 You can work with expressions!",
+          "winText": "\ud83c\udf89 You can work with expressions!",
           "tags": [
             "Math"
           ],
@@ -1206,7 +1206,7 @@ window.LEARNKIT = {
         {
           "title": "Expanding & Factoring",
           "intro": "Use the distributive property to expand and factor expressions.",
-          "winText": "🎉 You can expand and factor!",
+          "winText": "\ud83c\udf89 You can expand and factor!",
           "tags": [
             "Math"
           ],
@@ -1314,7 +1314,7 @@ window.LEARNKIT = {
         {
           "title": "Solving Two-Step Equations",
           "intro": "Undo operations step by step to find the value of the variable.",
-          "winText": "🎉 You can solve two-step equations!",
+          "winText": "\ud83c\udf89 You can solve two-step equations!",
           "tags": [
             "Math"
           ],
@@ -1423,7 +1423,7 @@ window.LEARNKIT = {
         {
           "title": "Inequalities",
           "intro": "Inequalities compare values. The solution is a range of numbers, not just one.",
-          "winText": "🎉 You can solve and graph inequalities!",
+          "winText": "\ud83c\udf89 You can solve and graph inequalities!",
           "tags": [
             "Math"
           ],
@@ -1437,17 +1437,17 @@ window.LEARNKIT = {
                   "p": "Solve inequalities like equations, but flip the sign if you multiply or divide by a negative number."
                 },
                 {
-                  "example": "x + 3 > 7 → x > 4"
+                  "example": "x + 3 > 7 \u2192 x > 4"
                 },
                 {
-                  "example": "2x ≤ 10 → x ≤ 5"
+                  "example": "2x \u2264 10 \u2192 x \u2264 5"
                 },
                 {
-                  "example": "-3x > 12 → x < -4 (sign flips!)"
+                  "example": "-3x > 12 \u2192 x < -4 (sign flips!)"
                 },
                 {
                   "h": "Vocabulary: inequality",
-                  "p": "A math sentence that uses <, >, ≤, ≥, or ≠."
+                  "p": "A math sentence that uses <, >, \u2264, \u2265, or \u2260."
                 }
               ]
             },
@@ -1463,8 +1463,8 @@ window.LEARNKIT = {
                   "code": "U03-L04-Q01"
                 },
                 {
-                  "q": "[U03-L04-Q02] 3x ≤ 18",
-                  "a": "x≤6",
+                  "q": "[U03-L04-Q02] 3x \u2264 18",
+                  "a": "x\u22646",
                   "type": "text",
                   "code": "U03-L04-Q02"
                 },
@@ -1494,8 +1494,8 @@ window.LEARNKIT = {
                   "code": "U03-L04-P01"
                 },
                 {
-                  "left": "4x ≤ 20",
-                  "right": "x ≤ 5",
+                  "left": "4x \u2264 20",
+                  "right": "x \u2264 5",
                   "code": "U03-L04-P02"
                 },
                 {
@@ -1504,8 +1504,8 @@ window.LEARNKIT = {
                   "code": "U03-L04-P03"
                 },
                 {
-                  "left": "-5x ≥ 15",
-                  "right": "x ≤ -3",
+                  "left": "-5x \u2265 15",
+                  "right": "x \u2264 -3",
                   "code": "U03-L04-P04"
                 }
               ]
@@ -1515,12 +1515,12 @@ window.LEARNKIT = {
               "title": "Budget Mission",
               "stages": [
                 {
-                  "text": "[U03-L04-Q05] You have $50. A game costs $10 and each movie ticket costs $8. How many tickets can you buy? Write: 10 + 8t ≤ 50.",
+                  "text": "[U03-L04-Q05] You have $50. A game costs $10 and each movie ticket costs $8. How many tickets can you buy? Write: 10 + 8t \u2264 50.",
                   "answer": "5",
                   "code": "U03-L04-Q05"
                 },
                 {
-                  "text": "[U03-L04-Q06] You need at least 80 points to pass. Each question gives 4 points. How many questions? Write: 4q ≥ 80.",
+                  "text": "[U03-L04-Q06] You need at least 80 points to pass. Each question gives 4 points. How many questions? Write: 4q \u2265 80.",
                   "answer": "20",
                   "code": "U03-L04-Q06"
                 }
@@ -1537,7 +1537,7 @@ window.LEARNKIT = {
         {
           "title": "Scale Drawings",
           "intro": "A scale drawing is a picture that is bigger or smaller than the real thing, but keeps the same shape.",
-          "winText": "🎉 You can read scale drawings!",
+          "winText": "\ud83c\udf89 You can read scale drawings!",
           "tags": [
             "Math"
           ],
@@ -1551,7 +1551,7 @@ window.LEARNKIT = {
                   "p": "Scale tells you the ratio of the drawing to real life. 1 cm : 5 m means 1 cm on paper = 5 m in real life."
                 },
                 {
-                  "example": "A room is 4 cm long on a scale drawing with scale 1 cm : 2 m. Real length = 4 × 2 = 8 m."
+                  "example": "A room is 4 cm long on a scale drawing with scale 1 cm : 2 m. Real length = 4 \u00d7 2 = 8 m."
                 },
                 {
                   "tip": "Multiply to go from drawing to real. Divide to go from real to drawing."
@@ -1627,7 +1627,7 @@ window.LEARNKIT = {
         {
           "title": "Circles: Area & Circumference",
           "intro": "Learn the two main circle formulas and when to use them.",
-          "winText": "🎉 You can work with circles!",
+          "winText": "\ud83c\udf89 You can work with circles!",
           "tags": [
             "Math"
           ],
@@ -1641,10 +1641,10 @@ window.LEARNKIT = {
                   "p": "Circumference is the distance around a circle. Area is the space inside."
                 },
                 {
-                  "example": "C = 2πr and A = πr². Use π ≈ 3.14."
+                  "example": "C = 2\u03c0r and A = \u03c0r\u00b2. Use \u03c0 \u2248 3.14."
                 },
                 {
-                  "example": "A circle with radius 3 has area = 3.14 × 3 × 3 = 28.26."
+                  "example": "A circle with radius 3 has area = 3.14 \u00d7 3 \u00d7 3 = 28.26."
                 },
                 {
                   "h": "Vocabulary: radius",
@@ -1652,7 +1652,7 @@ window.LEARNKIT = {
                 },
                 {
                   "h": "Vocabulary: diameter",
-                  "p": "The distance across a circle through the center. Diameter = 2 × radius."
+                  "p": "The distance across a circle through the center. Diameter = 2 \u00d7 radius."
                 }
               ]
             },
@@ -1662,13 +1662,13 @@ window.LEARNKIT = {
               "title": "Circle Calculations",
               "questions": [
                 {
-                  "q": "[U04-L02-Q01] Radius = 4. Find circumference. (Use 3.14 for π)",
+                  "q": "[U04-L02-Q01] Radius = 4. Find circumference. (Use 3.14 for \u03c0)",
                   "a": "25.12",
                   "type": "text",
                   "code": "U04-L02-Q01"
                 },
                 {
-                  "q": "[U04-L02-Q02] Radius = 5. Find area. (Use 3.14 for π)",
+                  "q": "[U04-L02-Q02] Radius = 5. Find area. (Use 3.14 for \u03c0)",
                   "a": "78.5",
                   "type": "text",
                   "code": "U04-L02-Q02"
@@ -1689,12 +1689,12 @@ window.LEARNKIT = {
               "pairs": [
                 {
                   "left": "Find distance around circle",
-                  "right": "C = 2πr",
+                  "right": "C = 2\u03c0r",
                   "code": "U04-L02-P01"
                 },
                 {
                   "left": "Find space inside circle",
-                  "right": "A = πr²",
+                  "right": "A = \u03c0r\u00b2",
                   "code": "U04-L02-P02"
                 },
                 {
@@ -1725,7 +1725,7 @@ window.LEARNKIT = {
         {
           "title": "Angles & Shapes",
           "intro": "Find missing angles using facts about complementary, supplementary, and vertical angles.",
-          "winText": "🎉 You can solve angle puzzles!",
+          "winText": "\ud83c\udf89 You can solve angle puzzles!",
           "tags": [
             "Math"
           ],
@@ -1736,13 +1736,13 @@ window.LEARNKIT = {
               "title": "Angle Relationships",
               "blocks": [
                 {
-                  "p": "Complementary angles add to 90°. Supplementary angles add to 180°. Vertical angles are equal."
+                  "p": "Complementary angles add to 90\u00b0. Supplementary angles add to 180\u00b0. Vertical angles are equal."
                 },
                 {
-                  "example": "If one angle is 35°, its complement is 90 - 35 = 55°."
+                  "example": "If one angle is 35\u00b0, its complement is 90 - 35 = 55\u00b0."
                 },
                 {
-                  "example": "Two supplementary angles are 120° and x. x = 180 - 120 = 60°."
+                  "example": "Two supplementary angles are 120\u00b0 and x. x = 180 - 120 = 60\u00b0."
                 },
                 {
                   "h": "Vocabulary: adjacent angles",
@@ -1756,25 +1756,25 @@ window.LEARNKIT = {
               "title": "Find the Missing Angle",
               "questions": [
                 {
-                  "q": "[U04-L03-Q01] Find the complement of 25°.",
+                  "q": "[U04-L03-Q01] Find the complement of 25\u00b0.",
                   "a": "65",
                   "type": "text",
                   "code": "U04-L03-Q01"
                 },
                 {
-                  "q": "[U04-L03-Q02] Find the supplement of 70°.",
+                  "q": "[U04-L03-Q02] Find the supplement of 70\u00b0.",
                   "a": "110",
                   "type": "text",
                   "code": "U04-L03-Q02"
                 },
                 {
-                  "q": "[U04-L03-Q03] Two vertical angles are shown. One is 40°. What is the other?",
+                  "q": "[U04-L03-Q03] Two vertical angles are shown. One is 40\u00b0. What is the other?",
                   "a": "40",
                   "type": "text",
                   "code": "U04-L03-Q03"
                 },
                 {
-                  "q": "[U04-L03-Q04] A triangle has angles 50° and 60°. Find the third angle.",
+                  "q": "[U04-L03-Q04] A triangle has angles 50\u00b0 and 60\u00b0. Find the third angle.",
                   "a": "70",
                   "type": "text",
                   "code": "U04-L03-Q04"
@@ -1793,7 +1793,7 @@ window.LEARNKIT = {
               ],
               "items": [
                 {
-                  "text": "Two angles add to 90°",
+                  "text": "Two angles add to 90\u00b0",
                   "category": "Complementary",
                   "code": "U04-L03-P01"
                 },
@@ -1803,7 +1803,7 @@ window.LEARNKIT = {
                   "code": "U04-L03-P02"
                 },
                 {
-                  "text": "Two angles add to 180°",
+                  "text": "Two angles add to 180\u00b0",
                   "category": "Supplementary",
                   "code": "U04-L03-P03"
                 }
@@ -1814,12 +1814,12 @@ window.LEARNKIT = {
               "title": "Bridge Builder Mission",
               "stages": [
                 {
-                  "text": "[U04-L03-Q05] A bridge beam makes a 35° angle with the road. What angle does it make with the vertical support?",
+                  "text": "[U04-L03-Q05] A bridge beam makes a 35\u00b0 angle with the road. What angle does it make with the vertical support?",
                   "answer": "55",
                   "code": "U04-L03-Q05"
                 },
                 {
-                  "text": "[U04-L03-Q06] Two beams cross. One angle is 110°. What is the angle next to it on a straight line?",
+                  "text": "[U04-L03-Q06] Two beams cross. One angle is 110\u00b0. What is the angle next to it on a straight line?",
                   "answer": "70",
                   "code": "U04-L03-Q06"
                 }
@@ -1830,7 +1830,7 @@ window.LEARNKIT = {
         {
           "title": "Area, Volume & Surface Area",
           "intro": "Find the space inside and the space around 2D and 3D shapes.",
-          "winText": "🎉 You can measure 2D and 3D shapes!",
+          "winText": "\ud83c\udf89 You can measure 2D and 3D shapes!",
           "tags": [
             "Math"
           ],
@@ -1844,7 +1844,7 @@ window.LEARNKIT = {
                   "p": "Break a shape into simpler shapes. Find each area, then add or subtract."
                 },
                 {
-                  "example": "A rectangle 8×5 with a triangle on top (base 8, height 3). Area = 40 + 12 = 52."
+                  "example": "A rectangle 8\u00d75 with a triangle on top (base 8, height 3). Area = 40 + 12 = 52."
                 },
                 {
                   "h": "Vocabulary: surface area",
@@ -1862,7 +1862,7 @@ window.LEARNKIT = {
               "title": "Area and Volume",
               "questions": [
                 {
-                  "q": "[U04-L04-Q01] A rectangular prism is 4×3×5. What is its volume?",
+                  "q": "[U04-L04-Q01] A rectangular prism is 4\u00d73\u00d75. What is its volume?",
                   "a": "60",
                   "type": "text",
                   "code": "U04-L04-Q01"
@@ -1889,22 +1889,22 @@ window.LEARNKIT = {
               "pairs": [
                 {
                   "left": "Area of rectangle",
-                  "right": "length × width",
+                  "right": "length \u00d7 width",
                   "code": "U04-L04-P01"
                 },
                 {
                   "left": "Volume of prism",
-                  "right": "length × width × height",
+                  "right": "length \u00d7 width \u00d7 height",
                   "code": "U04-L04-P02"
                 },
                 {
                   "left": "Area of triangle",
-                  "right": "1/2 × base × height",
+                  "right": "1/2 \u00d7 base \u00d7 height",
                   "code": "U04-L04-P03"
                 },
                 {
                   "left": "Surface area of cube",
-                  "right": "6 × side²",
+                  "right": "6 \u00d7 side\u00b2",
                   "code": "U04-L04-P04"
                 }
               ]
@@ -1914,12 +1914,12 @@ window.LEARNKIT = {
               "title": "Aquarium Mission",
               "stages": [
                 {
-                  "text": "[U04-L04-Q04] A fish tank is 6 dm long, 4 dm wide, and 5 dm high. How many liters of water can it hold? (1 dm³ = 1 L)",
+                  "text": "[U04-L04-Q04] A fish tank is 6 dm long, 4 dm wide, and 5 dm high. How many liters of water can it hold? (1 dm\u00b3 = 1 L)",
                   "answer": "120",
                   "code": "U04-L04-Q04"
                 },
                 {
-                  "text": "[U04-L04-Q05] You want to paint the outside of a box that is 5×4×3. What is the surface area?",
+                  "text": "[U04-L04-Q05] You want to paint the outside of a box that is 5\u00d74\u00d73. What is the surface area?",
                   "answer": "94",
                   "code": "U04-L04-Q05"
                 }
@@ -1936,7 +1936,7 @@ window.LEARNKIT = {
         {
           "title": "Sampling & Data",
           "intro": "Learn how to collect data and make good guesses about a big group from a small sample.",
-          "winText": "🎉 You understand sampling!",
+          "winText": "\ud83c\udf89 You understand sampling!",
           "tags": [
             "Math"
           ],
@@ -2030,7 +2030,7 @@ window.LEARNKIT = {
         {
           "title": "Probability Basics",
           "intro": "Probability tells us how likely something is to happen. It is always between 0 and 1.",
-          "winText": "🎉 You can find probability!",
+          "winText": "\ud83c\udf89 You can find probability!",
           "tags": [
             "Math"
           ],
@@ -2041,7 +2041,7 @@ window.LEARNKIT = {
               "title": "Likelihood",
               "blocks": [
                 {
-                  "p": "Probability = (number of ways it can happen) ÷ (total number of possible outcomes)."
+                  "p": "Probability = (number of ways it can happen) \u00f7 (total number of possible outcomes)."
                 },
                 {
                   "example": "A bag has 3 red and 7 blue marbles. P(red) = 3/10 = 0.3 = 30%."
@@ -2125,7 +2125,7 @@ window.LEARNKIT = {
         {
           "title": "Compound Events",
           "intro": "When two or more things happen together, we count outcomes with lists, tables, or tree diagrams.",
-          "winText": "🎉 You can find compound probability!",
+          "winText": "\ud83c\udf89 You can find compound probability!",
           "tags": [
             "Math"
           ],
@@ -2178,12 +2178,12 @@ window.LEARNKIT = {
               "mode": "match",
               "pairs": [
                 {
-                  "left": "2 shirts × 3 pants",
+                  "left": "2 shirts \u00d7 3 pants",
                   "right": "6 outfits",
                   "code": "U05-L03-P01"
                 },
                 {
-                  "left": "Coin × 3 flavors",
+                  "left": "Coin \u00d7 3 flavors",
                   "right": "6 outcomes",
                   "code": "U05-L03-P02"
                 },
@@ -2221,7 +2221,7 @@ window.LEARNKIT = {
         {
           "title": "Find the Evidence",
           "intro": "Good readers use proof from the text to support their ideas.",
-          "winText": "🎉 You found text evidence!",
+          "winText": "\ud83c\udf89 You found text evidence!",
           "tags": [
             "ELA"
           ],
@@ -2252,18 +2252,31 @@ window.LEARNKIT = {
               "title": "Pick the Best Evidence",
               "questions": [
                 {
-                  "q": "[U06-L01-Q01] Claim: The dog is friendly. Which is the best evidence? A) The dog barked. B) The dog wagged its tail and licked the girl's hand.",
-                  "a": "B",
-                  "type": "text",
-                  "code": "U06-L01-Q01"
+                  "q": "[U06-L01-Q01] Claim: The dog is friendly. Which is the best evidence?",
+                  "a": 0,
+                  "type": "mcq",
+                  "code": "U06-L01-Q01",
+                  "options": [
+                    "B",
+                    "The dog barked loudly.",
+                    "The dog wagged its tail and licked the girl's hand.",
+                    "The dog slept all day."
+                  ]
                 },
                 {
-                  "q": "[U06-L01-Q02] Claim: It was raining hard. Best evidence? A) Puddles filled the street. B) The sun was bright.",
-                  "a": "A",
-                  "type": "text",
-                  "code": "U06-L01-Q02"
+                  "q": "[U06-L01-Q02] Claim: It was raining hard. Best evidence?",
+                  "a": 2,
+                  "type": "mcq",
+                  "code": "U06-L01-Q02",
+                  "options": [
+                    "Puddles filled the street.",
+                    "Children played outside.",
+                    "A",
+                    "The sun was bright."
+                  ]
                 }
-              ]
+              ],
+              "strict": true
             },
             {
               "kind": "practice",
@@ -2309,7 +2322,7 @@ window.LEARNKIT = {
         {
           "title": "Central Idea vs. Theme",
           "intro": "Central idea is what a nonfiction text is mostly about. Theme is the big life lesson in a story.",
-          "winText": "🎉 You can find central idea and theme!",
+          "winText": "\ud83c\udf89 You can find central idea and theme!",
           "tags": [
             "ELA"
           ],
@@ -2340,23 +2353,42 @@ window.LEARNKIT = {
               "questions": [
                 {
                   "q": "[U06-L02-Q01] A story shows a boy sharing his food with a stranger. Theme?",
-                  "a": "kindness",
-                  "type": "text",
-                  "code": "U06-L02-Q01"
+                  "a": 3,
+                  "type": "mcq",
+                  "code": "U06-L02-Q01",
+                  "options": [
+                    "courage",
+                    "honesty",
+                    "friendship",
+                    "kindness"
+                  ]
                 },
                 {
                   "q": "[U06-L02-Q02] An article explains how exercise improves sleep, mood, and energy. Central idea?",
-                  "a": "exercise is good for you",
-                  "type": "text",
-                  "code": "U06-L02-Q02"
+                  "a": 1,
+                  "type": "mcq",
+                  "code": "U06-L02-Q02",
+                  "options": [
+                    "mood matters",
+                    "exercise is good for you",
+                    "energy is good",
+                    "sleep is important"
+                  ]
                 },
                 {
                   "q": "[U06-L02-Q03] A story shows a character learning to be brave. Theme?",
-                  "a": "courage",
-                  "type": "text",
-                  "code": "U06-L02-Q03"
+                  "a": 2,
+                  "type": "mcq",
+                  "code": "U06-L02-Q03",
+                  "options": [
+                    "friendship",
+                    "kindness",
+                    "courage",
+                    "honesty"
+                  ]
                 }
-              ]
+              ],
+              "strict": true
             },
             {
               "kind": "practice",
@@ -2411,7 +2443,7 @@ window.LEARNKIT = {
         {
           "title": "Inferences",
           "intro": "An inference is a smart guess based on clues from the text plus what you already know.",
-          "winText": "🎉 You can make inferences!",
+          "winText": "\ud83c\udf89 You can make inferences!",
           "tags": [
             "ELA"
           ],
@@ -2439,23 +2471,42 @@ window.LEARNKIT = {
               "questions": [
                 {
                   "q": "[U06-L03-Q01] Text: \"Tom's hands were covered in flour and chocolate.\" What can you infer?",
-                  "a": "he was baking",
-                  "type": "text",
-                  "code": "U06-L03-Q01"
+                  "a": 0,
+                  "type": "mcq",
+                  "code": "U06-L03-Q01",
+                  "options": [
+                    "he was baking",
+                    "he was sleeping",
+                    "he was running",
+                    "he was painting"
+                  ]
                 },
                 {
                   "q": "[U06-L03-Q02] Text: \"The classroom was silent. Everyone stared at the broken window.\" What can you infer?",
-                  "a": "someone broke it",
-                  "type": "text",
-                  "code": "U06-L03-Q02"
+                  "a": 1,
+                  "type": "mcq",
+                  "code": "U06-L03-Q02",
+                  "options": [
+                    "the window was new",
+                    "someone broke it",
+                    "it was a sunny day",
+                    "everyone was happy"
+                  ]
                 },
                 {
                   "q": "[U06-L03-Q03] Text: \"Her eyes filled with tears as she read the letter.\" What can you infer?",
-                  "a": "she is sad or emotional",
-                  "type": "text",
-                  "code": "U06-L03-Q03"
+                  "a": 1,
+                  "type": "mcq",
+                  "code": "U06-L03-Q03",
+                  "options": [
+                    "she is hungry",
+                    "she is sad or emotional",
+                    "she is angry",
+                    "she is tired"
+                  ]
                 }
-              ]
+              ],
+              "strict": true
             },
             {
               "kind": "practice",
@@ -2501,7 +2552,7 @@ window.LEARNKIT = {
         {
           "title": "Author's Purpose & Point of View",
           "intro": "Why did the author write this? What does the author think?",
-          "winText": "🎉 You can analyze the author!",
+          "winText": "\ud83c\udf89 You can analyze the author!",
           "tags": [
             "ELA"
           ],
@@ -2534,23 +2585,42 @@ window.LEARNKIT = {
               "questions": [
                 {
                   "q": "[U06-L04-Q01] A text lists facts about how volcanoes form. Purpose?",
-                  "a": "inform",
-                  "type": "text",
-                  "code": "U06-L04-Q01"
+                  "a": 0,
+                  "type": "mcq",
+                  "code": "U06-L04-Q01",
+                  "options": [
+                    "inform",
+                    "persuade",
+                    "entertain",
+                    "describe"
+                  ]
                 },
                 {
                   "q": "[U06-L04-Q02] A story makes you laugh about a silly dog. Purpose?",
-                  "a": "entertain",
-                  "type": "text",
-                  "code": "U06-L04-Q02"
+                  "a": 1,
+                  "type": "mcq",
+                  "code": "U06-L04-Q02",
+                  "options": [
+                    "persuade",
+                    "entertain",
+                    "describe",
+                    "inform"
+                  ]
                 },
                 {
                   "q": "[U06-L04-Q03] An essay says, \"School should start later because students need sleep.\" Purpose?",
-                  "a": "persuade",
-                  "type": "text",
-                  "code": "U06-L04-Q03"
+                  "a": 2,
+                  "type": "mcq",
+                  "code": "U06-L04-Q03",
+                  "options": [
+                    "entertain",
+                    "inform",
+                    "persuade",
+                    "describe"
+                  ]
                 }
-              ]
+              ],
+              "strict": true
             },
             {
               "kind": "practice",
@@ -2612,7 +2682,7 @@ window.LEARNKIT = {
         {
           "title": "Topic Sentences",
           "intro": "Every paragraph needs a clear main idea. Start with a strong topic sentence.",
-          "winText": "🎉 You can write topic sentences!",
+          "winText": "\ud83c\udf89 You can write topic sentences!",
           "tags": [
             "ELA"
           ],
@@ -2640,17 +2710,30 @@ window.LEARNKIT = {
               "questions": [
                 {
                   "q": "[U07-L01-Q01] Topic: dogs. Sentence: \"Dogs are good.\" Strong or weak?",
-                  "a": "weak",
-                  "type": "text",
-                  "code": "U07-L01-Q01"
+                  "a": 0,
+                  "type": "mcq",
+                  "code": "U07-L01-Q01",
+                  "options": [
+                    "weak",
+                    "fact",
+                    "strong",
+                    "opinion"
+                  ]
                 },
                 {
                   "q": "[U07-L01-Q02] Topic: dogs. Sentence: \"Dogs make great pets because they are loyal, playful, and protective.\" Strong or weak?",
-                  "a": "strong",
-                  "type": "text",
-                  "code": "U07-L01-Q02"
+                  "a": 2,
+                  "type": "mcq",
+                  "code": "U07-L01-Q02",
+                  "options": [
+                    "weak",
+                    "fact",
+                    "strong",
+                    "opinion"
+                  ]
                 }
-              ]
+              ],
+              "strict": true
             },
             {
               "kind": "practice",
@@ -2696,7 +2779,7 @@ window.LEARNKIT = {
         {
           "title": "Supporting Details",
           "intro": "Details explain, prove, or describe your topic sentence. Without details, your paragraph is empty.",
-          "winText": "🎉 You can add strong details!",
+          "winText": "\ud83c\udf89 You can add strong details!",
           "tags": [
             "ELA"
           ],
@@ -2723,18 +2806,31 @@ window.LEARNKIT = {
               "title": "Find the Detail",
               "questions": [
                 {
-                  "q": "[U07-L02-Q01] Topic sentence: \"My city has many parks.\" Which detail fits best? A) The library is large. B) Central Park has a lake and playground.",
-                  "a": "B",
-                  "type": "text",
-                  "code": "U07-L02-Q01"
+                  "q": "[U07-L02-Q01] Topic sentence: \"My city has many parks.\" Which detail fits best?",
+                  "a": 2,
+                  "type": "mcq",
+                  "code": "U07-L02-Q01",
+                  "options": [
+                    "Central Park has a lake and playground.",
+                    "The city has many people.",
+                    "B",
+                    "The library is large."
+                  ]
                 },
                 {
-                  "q": "[U07-L02-Q02] Topic sentence: \"Homework helps students review.\" Which detail fits? A) It takes time. B) It gives students a chance to practice skills.",
-                  "a": "B",
-                  "type": "text",
-                  "code": "U07-L02-Q02"
+                  "q": "[U07-L02-Q02] Topic sentence: \"Homework helps students review.\" Which detail fits?",
+                  "a": 1,
+                  "type": "mcq",
+                  "code": "U07-L02-Q02",
+                  "options": [
+                    "It takes time.",
+                    "B",
+                    "It gives students a chance to practice skills.",
+                    "Students dislike it."
+                  ]
                 }
-              ]
+              ],
+              "strict": true
             },
             {
               "kind": "practice",
@@ -2780,7 +2876,7 @@ window.LEARNKIT = {
         {
           "title": "Transitions & Concluding Sentences",
           "intro": "Transitions connect your ideas. A conclusion wraps up your paragraph.",
-          "winText": "🎉 You can connect and close paragraphs!",
+          "winText": "\ud83c\udf89 You can connect and close paragraphs!",
           "tags": [
             "ELA"
           ],
@@ -2811,24 +2907,43 @@ window.LEARNKIT = {
               "title": "Choose the Transition",
               "questions": [
                 {
-                  "q": "[U07-L03-Q01] I like pizza. ____, I like pasta. (also / however)",
-                  "a": "also",
-                  "type": "text",
-                  "code": "U07-L03-Q01"
+                  "q": "[U07-L03-Q01] I like pizza. ____, I like pasta.",
+                  "a": 1,
+                  "type": "mcq",
+                  "code": "U07-L03-Q01",
+                  "options": [
+                    "however",
+                    "also",
+                    "finally",
+                    "therefore"
+                  ]
                 },
                 {
-                  "q": "[U07-L03-Q02] She studied hard. ____, she passed the test. (therefore / first)",
-                  "a": "therefore",
-                  "type": "text",
-                  "code": "U07-L03-Q02"
+                  "q": "[U07-L03-Q02] She studied hard. ____, she passed the test.",
+                  "a": 1,
+                  "type": "mcq",
+                  "code": "U07-L03-Q02",
+                  "options": [
+                    "also",
+                    "therefore",
+                    "first",
+                    "however"
+                  ]
                 },
                 {
-                  "q": "[U07-L03-Q03] First, mix the flour. ____, add the eggs. (Finally / Next)",
-                  "a": "Next",
-                  "type": "text",
-                  "code": "U07-L03-Q03"
+                  "q": "[U07-L03-Q03] First, mix the flour. ____, add the eggs.",
+                  "a": 1,
+                  "type": "mcq",
+                  "code": "U07-L03-Q03",
+                  "options": [
+                    "Also",
+                    "Next",
+                    "Finally",
+                    "First"
+                  ]
                 }
-              ]
+              ],
+              "strict": true
             },
             {
               "kind": "practice",
@@ -2879,7 +2994,7 @@ window.LEARNKIT = {
         {
           "title": "RACCE Paragraphs",
           "intro": "Use the RACCE formula to write strong answers to reading questions.",
-          "winText": "🎉 You can write RACCE paragraphs!",
+          "winText": "\ud83c\udf89 You can write RACCE paragraphs!",
           "tags": [
             "ELA"
           ],
@@ -2907,23 +3022,42 @@ window.LEARNKIT = {
               "questions": [
                 {
                   "q": "[U07-L04-Q01] \"The text states...\" Which RACCE part?",
-                  "a": "cite",
-                  "type": "text",
-                  "code": "U07-L04-Q01"
+                  "a": 3,
+                  "type": "mcq",
+                  "code": "U07-L04-Q01",
+                  "options": [
+                    "restate",
+                    "explain",
+                    "answer",
+                    "cite"
+                  ]
                 },
                 {
                   "q": "[U07-L04-Q02] \"This proves that...\" Which RACCE part?",
-                  "a": "explain",
-                  "type": "text",
-                  "code": "U07-L04-Q02"
+                  "a": 2,
+                  "type": "mcq",
+                  "code": "U07-L04-Q02",
+                  "options": [
+                    "cite",
+                    "answer",
+                    "explain",
+                    "restate"
+                  ]
                 },
                 {
                   "q": "[U07-L04-Q03] \"In my opinion...\" Which RACCE part?",
-                  "a": "answer",
-                  "type": "text",
-                  "code": "U07-L04-Q03"
+                  "a": 2,
+                  "type": "mcq",
+                  "code": "U07-L04-Q03",
+                  "options": [
+                    "explain",
+                    "cite",
+                    "answer",
+                    "restate"
+                  ]
                 }
-              ]
+              ],
+              "strict": true
             },
             {
               "kind": "practice",
@@ -2985,7 +3119,7 @@ window.LEARNKIT = {
         {
           "title": "Writing a Claim",
           "intro": "A claim is your opinion or main argument. It must be clear and debatable.",
-          "winText": "🎉 You can write a strong claim!",
+          "winText": "\ud83c\udf89 You can write a strong claim!",
           "tags": [
             "ELA"
           ],
@@ -3017,23 +3151,42 @@ window.LEARNKIT = {
               "questions": [
                 {
                   "q": "[U08-L01-Q01] \"Chocolate is a flavor.\" Strong or weak?",
-                  "a": "weak",
-                  "type": "text",
-                  "code": "U08-L01-Q01"
+                  "a": 1,
+                  "type": "mcq",
+                  "code": "U08-L01-Q01",
+                  "options": [
+                    "fact",
+                    "weak",
+                    "opinion",
+                    "strong"
+                  ]
                 },
                 {
                   "q": "[U08-L01-Q02] \"Chocolate ice cream is the best dessert because it is creamy and tastes great.\" Strong or weak?",
-                  "a": "strong",
-                  "type": "text",
-                  "code": "U08-L01-Q02"
+                  "a": 1,
+                  "type": "mcq",
+                  "code": "U08-L01-Q02",
+                  "options": [
+                    "fact",
+                    "strong",
+                    "weak",
+                    "opinion"
+                  ]
                 },
                 {
                   "q": "[U08-L01-Q03] \"Phones should be allowed in schools because they help with research and emergencies.\" Strong or weak?",
-                  "a": "strong",
-                  "type": "text",
-                  "code": "U08-L01-Q03"
+                  "a": 0,
+                  "type": "mcq",
+                  "code": "U08-L01-Q03",
+                  "options": [
+                    "strong",
+                    "weak",
+                    "fact",
+                    "opinion"
+                  ]
                 }
-              ]
+              ],
+              "strict": true
             },
             {
               "kind": "practice",
@@ -3079,7 +3232,7 @@ window.LEARNKIT = {
         {
           "title": "Reasons & Evidence",
           "intro": "A good argument gives reasons and proof to support the claim.",
-          "winText": "🎉 You can support a claim!",
+          "winText": "\ud83c\udf89 You can support a claim!",
           "tags": [
             "ELA"
           ],
@@ -3107,17 +3260,30 @@ window.LEARNKIT = {
               "questions": [
                 {
                   "q": "[U08-L02-Q01] \"Reading improves vocabulary.\" Reason or evidence?",
-                  "a": "reason",
-                  "type": "text",
-                  "code": "U08-L02-Q01"
+                  "a": 3,
+                  "type": "mcq",
+                  "code": "U08-L02-Q01",
+                  "options": [
+                    "evidence",
+                    "example",
+                    "opinion",
+                    "reason"
+                  ]
                 },
                 {
                   "q": "[U08-L02-Q02] \"A 2020 study found that students who read 20 minutes a day scored higher on tests.\" Reason or evidence?",
-                  "a": "evidence",
-                  "type": "text",
-                  "code": "U08-L02-Q02"
+                  "a": 1,
+                  "type": "mcq",
+                  "code": "U08-L02-Q02",
+                  "options": [
+                    "opinion",
+                    "evidence",
+                    "reason",
+                    "example"
+                  ]
                 }
-              ]
+              ],
+              "strict": true
             },
             {
               "kind": "practice",
@@ -3163,7 +3329,7 @@ window.LEARNKIT = {
         {
           "title": "Counterclaim & Rebuttal",
           "intro": "A strong argument acknowledges the other side and explains why your side is still better.",
-          "winText": "🎉 You can handle counterclaims!",
+          "winText": "\ud83c\udf89 You can handle counterclaims!",
           "tags": [
             "ELA"
           ],
@@ -3192,17 +3358,30 @@ window.LEARNKIT = {
               "questions": [
                 {
                   "q": "[U08-L03-Q01] \"Some people think phones distract students.\" Counterclaim or rebuttal?",
-                  "a": "counterclaim",
-                  "type": "text",
-                  "code": "U08-L03-Q01"
+                  "a": 0,
+                  "type": "mcq",
+                  "code": "U08-L03-Q01",
+                  "options": [
+                    "counterclaim",
+                    "claim",
+                    "evidence",
+                    "rebuttal"
+                  ]
                 },
                 {
                   "q": "[U08-L03-Q02] \"But phones can be turned off during class and used only for research.\" Counterclaim or rebuttal?",
-                  "a": "rebuttal",
-                  "type": "text",
-                  "code": "U08-L03-Q02"
+                  "a": 2,
+                  "type": "mcq",
+                  "code": "U08-L03-Q02",
+                  "options": [
+                    "evidence",
+                    "claim",
+                    "rebuttal",
+                    "counterclaim"
+                  ]
                 }
-              ]
+              ],
+              "strict": true
             },
             {
               "kind": "practice",
@@ -3248,7 +3427,7 @@ window.LEARNKIT = {
         {
           "title": "Full Argumentative Essay",
           "intro": "Put it all together: hook, claim, body paragraphs, counterclaim, and conclusion.",
-          "winText": "🎉 You wrote an argumentative essay!",
+          "winText": "\ud83c\udf89 You wrote an argumentative essay!",
           "tags": [
             "ELA"
           ],
@@ -3276,23 +3455,42 @@ window.LEARNKIT = {
               "questions": [
                 {
                   "q": "[U08-L04-Q01] \"Have you ever felt too tired to learn?\" Which essay part?",
-                  "a": "hook",
-                  "type": "text",
-                  "code": "U08-L04-Q01"
+                  "a": 1,
+                  "type": "mcq",
+                  "code": "U08-L04-Q01",
+                  "options": [
+                    "conclusion",
+                    "hook",
+                    "body",
+                    "claim"
+                  ]
                 },
                 {
                   "q": "[U08-L04-Q02] \"For these reasons, schools should start later.\" Which essay part?",
-                  "a": "conclusion",
-                  "type": "text",
-                  "code": "U08-L04-Q02"
+                  "a": 3,
+                  "type": "mcq",
+                  "code": "U08-L04-Q02",
+                  "options": [
+                    "body",
+                    "hook",
+                    "claim",
+                    "conclusion"
+                  ]
                 },
                 {
                   "q": "[U08-L04-Q03] \"Some parents disagree...\" Which essay part?",
-                  "a": "counterclaim",
-                  "type": "text",
-                  "code": "U08-L04-Q03"
+                  "a": 1,
+                  "type": "mcq",
+                  "code": "U08-L04-Q03",
+                  "options": [
+                    "hook",
+                    "counterclaim",
+                    "claim",
+                    "body"
+                  ]
                 }
-              ]
+              ],
+              "strict": true
             },
             {
               "kind": "practice",
@@ -3364,7 +3562,7 @@ window.LEARNKIT = {
         {
           "title": "Informative Essay Basics",
           "intro": "An informative essay teaches the reader about a topic using facts and explanations.",
-          "winText": "🎉 You can plan an informative essay!",
+          "winText": "\ud83c\udf89 You can plan an informative essay!",
           "tags": [
             "ELA"
           ],
@@ -3391,24 +3589,43 @@ window.LEARNKIT = {
               "title": "Informative or Argumentative?",
               "questions": [
                 {
-                  "q": "[U09-L01-Q01] \"Why Solar Energy Is the Best Choice\" — informative or argumentative?",
-                  "a": "argumentative",
-                  "type": "text",
-                  "code": "U09-L01-Q01"
+                  "q": "[U09-L01-Q01] \"Why Solar Energy Is the Best Choice\" \u2014 informative or argumentative?",
+                  "a": 2,
+                  "type": "mcq",
+                  "code": "U09-L01-Q01",
+                  "options": [
+                    "persuasive",
+                    "informative",
+                    "argumentative",
+                    "narrative"
+                  ]
                 },
                 {
-                  "q": "[U09-L01-Q02] \"How Solar Energy Works\" — informative or argumentative?",
-                  "a": "informative",
-                  "type": "text",
-                  "code": "U09-L01-Q02"
+                  "q": "[U09-L01-Q02] \"How Solar Energy Works\" \u2014 informative or argumentative?",
+                  "a": 0,
+                  "type": "mcq",
+                  "code": "U09-L01-Q02",
+                  "options": [
+                    "informative",
+                    "narrative",
+                    "persuasive",
+                    "argumentative"
+                  ]
                 },
                 {
-                  "q": "[U09-L01-Q03] \"The Life Cycle of a Butterfly\" — informative or argumentative?",
-                  "a": "informative",
-                  "type": "text",
-                  "code": "U09-L01-Q03"
+                  "q": "[U09-L01-Q03] \"The Life Cycle of a Butterfly\" \u2014 informative or argumentative?",
+                  "a": 0,
+                  "type": "mcq",
+                  "code": "U09-L01-Q03",
+                  "options": [
+                    "informative",
+                    "argumentative",
+                    "persuasive",
+                    "narrative"
+                  ]
                 }
-              ]
+              ],
+              "strict": true
             },
             {
               "kind": "practice",
@@ -3454,7 +3671,7 @@ window.LEARNKIT = {
         {
           "title": "Organizing Information",
           "intro": "Good informative essays are organized so readers can follow the ideas.",
-          "winText": "🎉 You can organize information!",
+          "winText": "\ud83c\udf89 You can organize information!",
           "tags": [
             "ELA"
           ],
@@ -3486,23 +3703,42 @@ window.LEARNKIT = {
               "questions": [
                 {
                   "q": "[U09-L02-Q01] An essay compares cats and dogs. Organization?",
-                  "a": "compare and contrast",
-                  "type": "text",
-                  "code": "U09-L02-Q01"
+                  "a": 3,
+                  "type": "mcq",
+                  "code": "U09-L02-Q01",
+                  "options": [
+                    "chronological",
+                    "problem and solution",
+                    "cause and effect",
+                    "compare and contrast"
+                  ]
                 },
                 {
                   "q": "[U09-L02-Q02] An essay tells the steps of making pizza. Organization?",
-                  "a": "chronological",
-                  "type": "text",
-                  "code": "U09-L02-Q02"
+                  "a": 0,
+                  "type": "mcq",
+                  "code": "U09-L02-Q02",
+                  "options": [
+                    "chronological",
+                    "cause and effect",
+                    "compare and contrast",
+                    "problem and solution"
+                  ]
                 },
                 {
                   "q": "[U09-L02-Q03] An essay explains why forests are burning and the results. Organization?",
-                  "a": "cause and effect",
-                  "type": "text",
-                  "code": "U09-L02-Q03"
+                  "a": 0,
+                  "type": "mcq",
+                  "code": "U09-L02-Q03",
+                  "options": [
+                    "cause and effect",
+                    "problem and solution",
+                    "chronological",
+                    "compare and contrast"
+                  ]
                 }
-              ]
+              ],
+              "strict": true
             },
             {
               "kind": "practice",
@@ -3553,7 +3789,7 @@ window.LEARNKIT = {
         {
           "title": "Introductions & Conclusions",
           "intro": "Hook your reader, introduce the topic, and end with a clear final thought.",
-          "winText": "🎉 You can open and close essays!",
+          "winText": "\ud83c\udf89 You can open and close essays!",
           "tags": [
             "ELA"
           ],
@@ -3581,17 +3817,30 @@ window.LEARNKIT = {
               "questions": [
                 {
                   "q": "[U09-L03-Q01] \"In this essay, you will learn about the water cycle.\" Introduction or conclusion?",
-                  "a": "introduction",
-                  "type": "text",
-                  "code": "U09-L03-Q01"
+                  "a": 0,
+                  "type": "mcq",
+                  "code": "U09-L03-Q01",
+                  "options": [
+                    "introduction",
+                    "thesis",
+                    "body",
+                    "conclusion"
+                  ]
                 },
                 {
                   "q": "[U09-L03-Q02] \"Now you understand why the water cycle is important to all life on Earth.\" Introduction or conclusion?",
-                  "a": "conclusion",
-                  "type": "text",
-                  "code": "U09-L03-Q02"
+                  "a": 3,
+                  "type": "mcq",
+                  "code": "U09-L03-Q02",
+                  "options": [
+                    "introduction",
+                    "body",
+                    "thesis",
+                    "conclusion"
+                  ]
                 }
-              ]
+              ],
+              "strict": true
             },
             {
               "kind": "practice",
@@ -3637,7 +3886,7 @@ window.LEARNKIT = {
         {
           "title": "Full Informative Essay",
           "intro": "Write a complete informative essay with all the parts.",
-          "winText": "🎉 You wrote an informative essay!",
+          "winText": "\ud83c\udf89 You wrote an informative essay!",
           "tags": [
             "ELA"
           ],
@@ -3662,17 +3911,30 @@ window.LEARNKIT = {
               "questions": [
                 {
                   "q": "[U09-L04-Q01] How many body paragraphs should a short informative essay have?",
-                  "a": "2 or 3",
-                  "type": "text",
-                  "code": "U09-L04-Q01"
+                  "a": 0,
+                  "type": "mcq",
+                  "code": "U09-L04-Q01",
+                  "options": [
+                    "2 or 3",
+                    "1 or 2",
+                    "4 or 5",
+                    "as many as you want"
+                  ]
                 },
                 {
                   "q": "[U09-L04-Q02] What does the introduction need besides a hook?",
-                  "a": "thesis or topic statement",
-                  "type": "text",
-                  "code": "U09-L04-Q02"
+                  "a": 1,
+                  "type": "mcq",
+                  "code": "U09-L04-Q02",
+                  "options": [
+                    "a hook",
+                    "thesis or topic statement",
+                    "a conclusion",
+                    "a body paragraph"
+                  ]
                 }
-              ]
+              ],
+              "strict": true
             },
             {
               "kind": "practice",
@@ -3739,7 +4001,7 @@ window.LEARNKIT = {
         {
           "title": "Sentence Variety",
           "intro": "Good writers use different sentence types to make their writing interesting.",
-          "winText": "🎉 You can vary your sentences!",
+          "winText": "\ud83c\udf89 You can vary your sentences!",
           "tags": [
             "ELA"
           ],
@@ -3768,23 +4030,42 @@ window.LEARNKIT = {
               "questions": [
                 {
                   "q": "[U10-L01-Q01] \"I ran, but he walked.\" Type?",
-                  "a": "compound",
-                  "type": "text",
-                  "code": "U10-L01-Q01"
+                  "a": 1,
+                  "type": "mcq",
+                  "code": "U10-L01-Q01",
+                  "options": [
+                    "simple",
+                    "compound",
+                    "complex",
+                    "fragment"
+                  ]
                 },
                 {
                   "q": "[U10-L01-Q02] \"Although it rained, we played outside.\" Type?",
-                  "a": "complex",
-                  "type": "text",
-                  "code": "U10-L01-Q02"
+                  "a": 3,
+                  "type": "mcq",
+                  "code": "U10-L01-Q02",
+                  "options": [
+                    "compound",
+                    "simple",
+                    "fragment",
+                    "complex"
+                  ]
                 },
                 {
                   "q": "[U10-L01-Q03] \"She sings.\" Type?",
-                  "a": "simple",
-                  "type": "text",
-                  "code": "U10-L01-Q03"
+                  "a": 0,
+                  "type": "mcq",
+                  "code": "U10-L01-Q03",
+                  "options": [
+                    "simple",
+                    "fragment",
+                    "compound",
+                    "complex"
+                  ]
                 }
-              ]
+              ],
+              "strict": true
             },
             {
               "kind": "practice",
@@ -3830,7 +4111,7 @@ window.LEARNKIT = {
         {
           "title": "Greek & Latin Roots",
           "intro": "Many English words come from Greek and Latin roots. Learn the roots to unlock new words.",
-          "winText": "🎉 You unlocked new words!",
+          "winText": "\ud83c\udf89 You unlocked new words!",
           "tags": [
             "ELA"
           ],
@@ -3866,23 +4147,42 @@ window.LEARNKIT = {
               "questions": [
                 {
                   "q": "[U10-L02-Q01] What does \"port\" mean?",
-                  "a": "carry",
-                  "type": "text",
-                  "code": "U10-L02-Q01"
+                  "a": 2,
+                  "type": "mcq",
+                  "code": "U10-L02-Q01",
+                  "options": [
+                    "hear",
+                    "say",
+                    "carry",
+                    "build"
+                  ]
                 },
                 {
                   "q": "[U10-L02-Q02] What does \"struct\" mean?",
-                  "a": "build",
-                  "type": "text",
-                  "code": "U10-L02-Q02"
+                  "a": 2,
+                  "type": "mcq",
+                  "code": "U10-L02-Q02",
+                  "options": [
+                    "carry",
+                    "say",
+                    "build",
+                    "hear"
+                  ]
                 },
                 {
                   "q": "[U10-L02-Q03] What does \"dict\" mean?",
-                  "a": "say",
-                  "type": "text",
-                  "code": "U10-L02-Q03"
+                  "a": 0,
+                  "type": "mcq",
+                  "code": "U10-L02-Q03",
+                  "options": [
+                    "say",
+                    "carry",
+                    "build",
+                    "hear"
+                  ]
                 }
-              ]
+              ],
+              "strict": true
             },
             {
               "kind": "practice",
@@ -3933,7 +4233,7 @@ window.LEARNKIT = {
         {
           "title": "Figurative Language",
           "intro": "Writers use comparisons and special words to create pictures and feelings.",
-          "winText": "🎉 You spotted figurative language!",
+          "winText": "\ud83c\udf89 You spotted figurative language!",
           "tags": [
             "ELA"
           ],
@@ -3962,23 +4262,42 @@ window.LEARNKIT = {
               "questions": [
                 {
                   "q": "[U10-L03-Q01] \"The classroom was a zoo.\" Simile, metaphor, or personification?",
-                  "a": "metaphor",
-                  "type": "text",
-                  "code": "U10-L03-Q01"
+                  "a": 3,
+                  "type": "mcq",
+                  "code": "U10-L03-Q01",
+                  "options": [
+                    "personification",
+                    "simile",
+                    "hyperbole",
+                    "metaphor"
+                  ]
                 },
                 {
                   "q": "[U10-L03-Q02] \"The stars winked in the sky.\" Simile, metaphor, or personification?",
-                  "a": "personification",
-                  "type": "text",
-                  "code": "U10-L03-Q02"
+                  "a": 1,
+                  "type": "mcq",
+                  "code": "U10-L03-Q02",
+                  "options": [
+                    "simile",
+                    "personification",
+                    "metaphor",
+                    "hyperbole"
+                  ]
                 },
                 {
                   "q": "[U10-L03-Q03] \"He runs as fast as a cheetah.\" Simile, metaphor, or personification?",
-                  "a": "simile",
-                  "type": "text",
-                  "code": "U10-L03-Q03"
+                  "a": 2,
+                  "type": "mcq",
+                  "code": "U10-L03-Q03",
+                  "options": [
+                    "personification",
+                    "metaphor",
+                    "simile",
+                    "hyperbole"
+                  ]
                 }
-              ]
+              ],
+              "strict": true
             },
             {
               "kind": "practice",
@@ -4024,7 +4343,7 @@ window.LEARNKIT = {
         {
           "title": "Narrative Writing",
           "intro": "Tell a story with characters, setting, conflict, and resolution.",
-          "winText": "🎉 You planned a story!",
+          "winText": "\ud83c\udf89 You planned a story!",
           "tags": [
             "ELA"
           ],
@@ -4052,23 +4371,42 @@ window.LEARNKIT = {
               "questions": [
                 {
                   "q": "[U10-L04-Q01] \"The problem the character faces.\" Which story part?",
-                  "a": "conflict",
-                  "type": "text",
-                  "code": "U10-L04-Q01"
+                  "a": 1,
+                  "type": "mcq",
+                  "code": "U10-L04-Q01",
+                  "options": [
+                    "resolution",
+                    "conflict",
+                    "setting",
+                    "climax"
+                  ]
                 },
                 {
                   "q": "[U10-L04-Q02] \"Where and when the story happens.\" Which story part?",
-                  "a": "setting",
-                  "type": "text",
-                  "code": "U10-L04-Q02"
+                  "a": 2,
+                  "type": "mcq",
+                  "code": "U10-L04-Q02",
+                  "options": [
+                    "resolution",
+                    "climax",
+                    "setting",
+                    "conflict"
+                  ]
                 },
                 {
                   "q": "[U10-L04-Q03] \"The most exciting moment.\" Which story part?",
-                  "a": "climax",
-                  "type": "text",
-                  "code": "U10-L04-Q03"
+                  "a": 0,
+                  "type": "mcq",
+                  "code": "U10-L04-Q03",
+                  "options": [
+                    "climax",
+                    "conflict",
+                    "resolution",
+                    "setting"
+                  ]
                 }
-              ]
+              ],
+              "strict": true
             },
             {
               "kind": "practice",
