@@ -2306,16 +2306,33 @@ window.LEARNKIT = {
               "title": "Evidence Hunt Mission",
               "stages": [
                 {
-                  "text": "[U06-L01-Q03] Read: \"Jamal studied every night. He got the highest score in the class.\" Write one piece of evidence that shows Jamal worked hard.",
-                  "answer": "studied every night",
-                  "code": "U06-L01-Q03"
+                  "type": "quiz",
+                  "code": "U06-L01-Q03",
+                  "q": "[U06-L01-Q03] Read: \"Jamal studied every night. He got the highest score in the class.\" Which evidence from the text best shows Jamal worked hard?",
+                  "options": [
+                    "Jamal studied every night",
+                    "Jamal has a big test coming up",
+                    "The class was very difficult",
+                    "Jamal likes learning new things"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 },
                 {
-                  "text": "[U06-L01-Q04] Read: \"The old house creaked in the wind. A loose shutter banged against the wall.\" Write one detail that creates a scary mood.",
-                  "answer": "creaked in the wind",
-                  "code": "U06-L01-Q04"
+                  "type": "quiz",
+                  "code": "U06-L01-Q04",
+                  "q": "[U06-L01-Q04] Read: \"The old house creaked in the wind. A loose shutter banged against the wall.\" Which detail from the passage best creates a scary mood?",
+                  "options": [
+                    "The old house creaked in the wind",
+                    "The house was painted white",
+                    "A friend visited the house",
+                    "The wind stopped at noon"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 }
-              ]
+              ],
+              "strict": true
             }
           ]
         },
@@ -2427,16 +2444,33 @@ window.LEARNKIT = {
               "title": "Summary Mission",
               "stages": [
                 {
-                  "text": "[U06-L02-Q04] Read: \"Many students feel nervous before a test. Deep breathing, good sleep, and preparation can help.\" Write the central idea in one sentence.",
-                  "answer": "students can reduce test anxiety with breathing sleep and preparation",
-                  "code": "U06-L02-Q04"
+                  "type": "quiz",
+                  "code": "U06-L02-Q04",
+                  "q": "[U06-L02-Q04] Read: \"Many students feel nervous before a test. Deep breathing, good sleep, and preparation can help.\" Which best states the central idea?",
+                  "options": [
+                    "Students can reduce test anxiety with breathing, sleep, and preparation",
+                    "Tests are always hard for everyone",
+                    "Students should try to avoid tests",
+                    "Breathing is the only way to feel calm"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 },
                 {
-                  "text": "[U06-L02-Q05] Read: \"Lila was afraid of water, but her coach encouraged her every day. After months of practice, she won a race.\" Write a theme.",
-                  "answer": "practice and support help you overcome fear",
-                  "code": "U06-L02-Q05"
+                  "type": "quiz",
+                  "code": "U06-L02-Q05",
+                  "q": "[U06-L02-Q05] Read: \"Lila was afraid of water, but her coach encouraged her every day. After months of practice, she won a race.\" Which best states the theme?",
+                  "options": [
+                    "Practice and support help you overcome fear",
+                    "Lila is the fastest swimmer",
+                    "Water is dangerous for children",
+                    "Racing is the best sport"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 }
-              ]
+              ],
+              "strict": true
             }
           ]
         },
@@ -2536,16 +2570,33 @@ window.LEARNKIT = {
               "title": "Detective Mission",
               "stages": [
                 {
-                  "text": "[U06-L03-Q04] Read: \"The kitchen smelled like garlic and tomatoes. A pot bubbled on the stove.\" What is happening? Use the word \"cooking\" in your answer.",
-                  "answer": "someone is cooking",
-                  "code": "U06-L03-Q04"
+                  "type": "quiz",
+                  "code": "U06-L03-Q04",
+                  "q": "[U06-L03-Q04] Read: \"The kitchen smelled like garlic and tomatoes. A pot bubbled on the stove.\" What is most likely happening?",
+                  "options": [
+                    "Someone is cooking",
+                    "Someone is cleaning the kitchen",
+                    "Someone is sleeping upstairs",
+                    "Someone is reading a book"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 },
                 {
-                  "text": "[U06-L03-Q05] Read: \"He looked at his watch and ran toward the bus stop.\" What can you infer?",
-                  "answer": "he is late for the bus",
-                  "code": "U06-L03-Q05"
+                  "type": "quiz",
+                  "code": "U06-L03-Q05",
+                  "q": "[U06-L03-Q05] Read: \"He looked at his watch and ran toward the bus stop.\" What can you infer?",
+                  "options": [
+                    "He is late for the bus",
+                    "He is early for the bus",
+                    "He is going for a walk",
+                    "He lost his watch"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 }
-              ]
+              ],
+              "strict": true
             }
           ]
         },
@@ -2660,16 +2711,33 @@ window.LEARNKIT = {
               "title": "Ad Analyzer Mission",
               "stages": [
                 {
-                  "text": "[U06-L04-Q04] Read: \"Buy Fresh Smile toothpaste! It is the strongest and whitens teeth in one week.\" What is the purpose?",
-                  "answer": "persuade",
-                  "code": "U06-L04-Q04"
+                  "type": "quiz",
+                  "code": "U06-L04-Q04",
+                  "q": "[U06-L04-Q04] Read: \"Buy Fresh Smile toothpaste! It is the strongest and whitens teeth in one week.\" What is the author's purpose?",
+                  "options": [
+                    "Persuade",
+                    "Inform",
+                    "Entertain",
+                    "Explain a science idea"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 },
                 {
-                  "text": "[U06-L04-Q05] What is the author's point of view about this toothpaste?",
-                  "answer": "it is the best",
-                  "code": "U06-L04-Q05"
+                  "type": "quiz",
+                  "code": "U06-L04-Q05",
+                  "q": "[U06-L04-Q05] What is the author's point of view about this toothpaste?",
+                  "options": [
+                    "It is the best toothpaste",
+                    "It is too expensive",
+                    "It is dangerous to use",
+                    "It is just an ordinary product"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 }
-              ]
+              ],
+              "strict": true
             }
           ]
         }
@@ -2763,16 +2831,33 @@ window.LEARNKIT = {
               "title": "Topic Sentence Mission",
               "stages": [
                 {
-                  "text": "[U07-L01-Q03] Write a topic sentence about why summer is fun.",
-                  "answer": "summer is fun because",
-                  "code": "U07-L01-Q03"
+                  "type": "quiz",
+                  "code": "U07-L01-Q03",
+                  "q": "[U07-L01-Q03] Which is the best topic sentence about why summer is fun?",
+                  "options": [
+                    "Summer is fun because there is no school and you can play outside all day",
+                    "I like to eat ice cream in July",
+                    "Summer is one of the four seasons",
+                    "My friend goes to camp every year"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 },
                 {
-                  "text": "[U07-L01-Q04] Write a topic sentence about the benefits of exercise.",
-                  "answer": "exercise is important because",
-                  "code": "U07-L01-Q04"
+                  "type": "quiz",
+                  "code": "U07-L01-Q04",
+                  "q": "[U07-L01-Q04] Which is the best topic sentence about the benefits of exercise?",
+                  "options": [
+                    "Exercise is important because it keeps your body and mind healthy",
+                    "I like to run sometimes after school",
+                    "Exercise can be hard to start",
+                    "Many people enjoy playing sports"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 }
-              ]
+              ],
+              "strict": true
             }
           ]
         },
@@ -2860,16 +2945,33 @@ window.LEARNKIT = {
               "title": "Detail Builder Mission",
               "stages": [
                 {
-                  "text": "[U07-L02-Q03] Topic sentence: \"Walking is great exercise.\" Write one supporting detail.",
-                  "answer": "walking strengthens your heart",
-                  "code": "U07-L02-Q03"
+                  "type": "quiz",
+                  "code": "U07-L02-Q03",
+                  "q": "[U07-L02-Q03] Topic sentence: \"Walking is great exercise.\" Which is the best supporting detail?",
+                  "options": [
+                    "Walking strengthens your heart and builds stamina",
+                    "Walking is slower than riding a bike",
+                    "I walk to school when it is sunny",
+                    "Cars are much faster than walking"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 },
                 {
-                  "text": "[U07-L02-Q04] Topic sentence: \"My grandmother is a great cook.\" Write one supporting detail.",
-                  "answer": "she makes delicious rice",
-                  "code": "U07-L02-Q04"
+                  "type": "quiz",
+                  "code": "U07-L02-Q04",
+                  "q": "[U07-L02-Q04] Topic sentence: \"My grandmother is a great cook.\" Which is the best supporting detail?",
+                  "options": [
+                    "She makes delicious rice for every family dinner",
+                    "My grandmother is very old now",
+                    "She lives far away from us",
+                    "Cooking is a popular hobby"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 }
-              ]
+              ],
+              "strict": true
             }
           ]
         },
@@ -2978,16 +3080,33 @@ window.LEARNKIT = {
               "title": "Paragraph Polish Mission",
               "stages": [
                 {
-                  "text": "[U07-L03-Q04] Write a concluding sentence for this topic: \"Dogs are loyal animals.\"",
-                  "answer": "dogs are loyal animals",
-                  "code": "U07-L03-Q04"
+                  "type": "quiz",
+                  "code": "U07-L03-Q04",
+                  "q": "[U07-L03-Q04] Which is the best concluding sentence for a paragraph about \"Dogs are loyal animals.\"?",
+                  "options": [
+                    "For all these reasons, dogs make faithful companions",
+                    "Dogs are a kind of animal",
+                    "I also like cats a lot",
+                    "Dogs have four legs and a tail"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 },
                 {
-                  "text": "[U07-L03-Q05] Add a transition to connect: \"I like reading. ____ , I enjoy writing.\"",
-                  "answer": "also",
-                  "code": "U07-L03-Q05"
+                  "type": "quiz",
+                  "code": "U07-L03-Q05",
+                  "q": "[U07-L03-Q05] Add a transition to connect: \"I like reading. ____ , I enjoy writing.\" Which fits best?",
+                  "options": [
+                    "Also",
+                    "Because",
+                    "But",
+                    "Although"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 }
-              ]
+              ],
+              "strict": true
             }
           ]
         },
@@ -3097,16 +3216,33 @@ window.LEARNKIT = {
               "title": "RACCE Writing Mission",
               "stages": [
                 {
-                  "text": "[U07-L04-Q04] Prompt: Why is exercise important? Use the RACCE format. Write your answer sentence here.",
-                  "answer": "exercise is important because",
-                  "code": "U07-L04-Q04"
+                  "type": "quiz",
+                  "code": "U07-L04-Q04",
+                  "q": "[U07-L04-Q04] Prompt: Why is exercise important? Which is the best answer sentence to start RACCE?",
+                  "options": [
+                    "Exercise is important because it keeps your heart and body strong",
+                    "I really like to exercise after school",
+                    "Exercise is a word we use a lot",
+                    "Some people exercise every morning"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 },
                 {
-                  "text": "[U07-L04-Q05] Now cite one fact about exercise.",
-                  "answer": "exercise makes your heart strong",
-                  "code": "U07-L04-Q05"
+                  "type": "quiz",
+                  "code": "U07-L04-Q05",
+                  "q": "[U07-L04-Q05] Which is one strong fact about exercise?",
+                  "options": [
+                    "Exercise makes your heart muscle stronger",
+                    "Exercise is the most fun activity",
+                    "Everyone should exercise every single day",
+                    "I exercise before breakfast"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 }
-              ]
+              ],
+              "strict": true
             }
           ]
         }
@@ -3216,16 +3352,33 @@ window.LEARNKIT = {
               "title": "Claim Builder Mission",
               "stages": [
                 {
-                  "text": "[U08-L01-Q04] Topic: Should students have a longer lunch? Write a strong claim.",
-                  "answer": "students should have a longer lunch because",
-                  "code": "U08-L01-Q04"
+                  "type": "quiz",
+                  "code": "U08-L01-Q04",
+                  "q": "[U08-L01-Q04] Topic: Should students have a longer lunch? Which is a strong claim?",
+                  "options": [
+                    "Students should have a longer lunch because it gives them time to eat and rest",
+                    "Lunch is my favorite part of the day",
+                    "Some students eat their food slowly",
+                    "I really like pizza for lunch"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 },
                 {
-                  "text": "[U08-L01-Q05] Topic: Should schools teach coding? Write a strong claim.",
-                  "answer": "schools should teach coding because",
-                  "code": "U08-L01-Q05"
+                  "type": "quiz",
+                  "code": "U08-L01-Q05",
+                  "q": "[U08-L01-Q05] Topic: Should schools teach coding? Which is a strong claim?",
+                  "options": [
+                    "Schools should teach coding because it prepares students for future jobs",
+                    "Coding is very hard to learn",
+                    "I use a computer every day at home",
+                    "School can be boring sometimes"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 }
-              ]
+              ],
+              "strict": true
             }
           ]
         },
@@ -3313,16 +3466,33 @@ window.LEARNKIT = {
               "title": "Argument Map Mission",
               "stages": [
                 {
-                  "text": "[U08-L02-Q03] Claim: Students should do chores at home. Write one reason.",
-                  "answer": "chores teach responsibility",
-                  "code": "U08-L02-Q03"
+                  "type": "quiz",
+                  "code": "U08-L02-Q03",
+                  "q": "[U08-L02-Q03] Claim: Students should do chores at home. Which is the clearest reason?",
+                  "options": [
+                    "Chores teach responsibility",
+                    "Chores are boring to do",
+                    "My mom makes me do chores",
+                    "Chores take up a lot of time"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 },
                 {
-                  "text": "[U08-L02-Q04] Give one piece of evidence for that reason.",
-                  "answer": "students who do chores learn time management",
-                  "code": "U08-L02-Q04"
+                  "type": "quiz",
+                  "code": "U08-L02-Q04",
+                  "q": "[U08-L02-Q04] Which is a strong piece of evidence for that reason?",
+                  "options": [
+                    "Students who do chores learn time management",
+                    "I do my chores every Saturday morning",
+                    "Chores are not very fun at all",
+                    "My brother does chores too sometimes"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 }
-              ]
+              ],
+              "strict": true
             }
           ]
         },
@@ -3411,16 +3581,33 @@ window.LEARNKIT = {
               "title": "Debate Mission",
               "stages": [
                 {
-                  "text": "[U08-L03-Q03] Claim: Students should wear uniforms. Write a counterclaim.",
-                  "answer": "students should not wear uniforms because",
-                  "code": "U08-L03-Q03"
+                  "type": "quiz",
+                  "code": "U08-L03-Q03",
+                  "q": "[U08-L03-Q03] Claim: Students should wear uniforms. Which is the best counterclaim?",
+                  "options": [
+                    "Students should not wear uniforms because uniforms limit self-expression",
+                    "Uniforms are comfortable to wear",
+                    "I like the way my uniform looks",
+                    "Uniforms can cost a lot of money"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 },
                 {
-                  "text": "[U08-L03-Q04] Now write a rebuttal to that counterclaim.",
-                  "answer": "however uniforms",
-                  "code": "U08-L03-Q04"
+                  "type": "quiz",
+                  "code": "U08-L03-Q04",
+                  "q": "[U08-L03-Q04] Which is the best rebuttal to that counterclaim?",
+                  "options": [
+                    "However, students can still show personality through accessories and attitude",
+                    "I disagree with that idea",
+                    "Uniforms are ugly and boring",
+                    "Everyone ends up wearing the same thing"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 }
-              ]
+              ],
+              "strict": true
             }
           ]
         },
@@ -3535,21 +3722,46 @@ window.LEARNKIT = {
               "title": "Essay Writing Mission",
               "stages": [
                 {
-                  "text": "[U08-L04-Q04] Prompt: Should students have homework? Write your claim here.",
-                  "answer": "students should",
-                  "code": "U08-L04-Q04"
+                  "type": "quiz",
+                  "code": "U08-L04-Q04",
+                  "q": "[U08-L04-Q04] Prompt: Should students have homework? Which is a strong claim?",
+                  "options": [
+                    "Students should have homework because it reinforces what they learn in class",
+                    "Homework can be very hard sometimes",
+                    "I do my homework every night",
+                    "Some students dislike homework a lot"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 },
                 {
-                  "text": "[U08-L04-Q05] Write a hook for your essay.",
-                  "answer": "have you ever",
-                  "code": "U08-L04-Q05"
+                  "type": "quiz",
+                  "code": "U08-L04-Q05",
+                  "q": "[U08-L04-Q05] Which is the strongest hook for an essay about homework?",
+                  "options": [
+                    "Have you ever wondered why homework matters so much?",
+                    "This essay is going to be about homework",
+                    "Homework is a word we use in school",
+                    "I will now talk about homework for you"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 },
                 {
-                  "text": "[U08-L04-Q06] Write one reason with evidence.",
-                  "answer": "homework helps",
-                  "code": "U08-L04-Q06"
+                  "type": "quiz",
+                  "code": "U08-L04-Q06",
+                  "q": "[U08-L04-Q06] Which is a clear reason with evidence?",
+                  "options": [
+                    "Homework helps students practice skills, and studies show practice raises test scores",
+                    "I do my homework every single day",
+                    "Homework takes a long time to finish",
+                    "My friend really likes doing homework"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 }
-              ]
+              ],
+              "strict": true
             }
           ]
         }
@@ -3655,16 +3867,33 @@ window.LEARNKIT = {
               "title": "Topic Choice Mission",
               "stages": [
                 {
-                  "text": "[U09-L01-Q04] Write an informative topic about an animal.",
-                  "answer": "how tigers hunt",
-                  "code": "U09-L01-Q04"
+                  "type": "quiz",
+                  "code": "U09-L01-Q04",
+                  "q": "[U09-L01-Q04] Which is a strong informative topic about an animal?",
+                  "options": [
+                    "How tigers hunt in the wild",
+                    "I really like tigers a lot",
+                    "Tigers are very big cats",
+                    "My pet cat is very nice"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 },
                 {
-                  "text": "[U09-L01-Q05] Write an informative topic about a process.",
-                  "answer": "how to bake bread",
-                  "code": "U09-L01-Q05"
+                  "type": "quiz",
+                  "code": "U09-L01-Q05",
+                  "q": "[U09-L01-Q05] Which is a strong informative topic about a process?",
+                  "options": [
+                    "How to bake bread step by step",
+                    "Bread is a tasty food to eat",
+                    "I bake bread with my mom",
+                    "Baking is a fun hobby"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 }
-              ]
+              ],
+              "strict": true
             }
           ]
         },
@@ -3768,21 +3997,46 @@ window.LEARNKIT = {
               "title": "Outline Mission",
               "stages": [
                 {
-                  "text": "[U09-L02-Q04] Choose a topic: \"How to Study for a Test.\" Write the first step.",
-                  "answer": "review your notes",
-                  "code": "U09-L02-Q04"
+                  "type": "quiz",
+                  "code": "U09-L02-Q04",
+                  "q": "[U09-L02-Q04] Topic: How to Study for a Test. Which is the best first step?",
+                  "options": [
+                    "Review your notes from class",
+                    "Take the test as early as you can",
+                    "Guess the answers you do not know",
+                    "Watch TV before the test"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 },
                 {
-                  "text": "[U09-L02-Q05] Write the second step.",
-                  "answer": "make flashcards",
-                  "code": "U09-L02-Q05"
+                  "type": "quiz",
+                  "code": "U09-L02-Q05",
+                  "q": "[U09-L02-Q05] Which is the best second step?",
+                  "options": [
+                    "Make flashcards for key terms",
+                    "Sleep all day until the test",
+                    "Skip the hard topics",
+                    "Forget what you just read"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 },
                 {
-                  "text": "[U09-L02-Q06] Write the third step.",
-                  "answer": "practice with a friend",
-                  "code": "U09-L02-Q06"
+                  "type": "quiz",
+                  "code": "U09-L02-Q06",
+                  "q": "[U09-L02-Q06] Which is the best third step?",
+                  "options": [
+                    "Practice with a friend",
+                    "Hide your notes from yourself",
+                    "Give up and stop studying",
+                    "Ignore the test completely"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 }
-              ]
+              ],
+              "strict": true
             }
           ]
         },
@@ -3870,16 +4124,33 @@ window.LEARNKIT = {
               "title": "Open and Close Mission",
               "stages": [
                 {
-                  "text": "[U09-L03-Q03] Write an introduction sentence about the importance of sleep.",
-                  "answer": "sleep is important because",
-                  "code": "U09-L03-Q03"
+                  "type": "quiz",
+                  "code": "U09-L03-Q03",
+                  "q": "[U09-L03-Q03] Which is the best introduction sentence about the importance of sleep?",
+                  "options": [
+                    "Sleep is important because it helps your brain and body recover",
+                    "Sleep is a thing people do",
+                    "I sleep at night when it is dark",
+                    "Beds are very comfy to lie on"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 },
                 {
-                  "text": "[U09-L03-Q04] Write a conclusion sentence about the same topic.",
-                  "answer": "getting enough sleep helps",
-                  "code": "U09-L03-Q04"
+                  "type": "quiz",
+                  "code": "U09-L03-Q04",
+                  "q": "[U09-L03-Q04] Which is the best conclusion sentence about the same topic?",
+                  "options": [
+                    "Getting enough sleep helps you stay healthy and focused",
+                    "That is all I have to say about sleep",
+                    "Sleep is now finished for today",
+                    "I am feeling very tired right now"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 }
-              ]
+              ],
+              "strict": true
             }
           ]
         },
@@ -3974,21 +4245,46 @@ window.LEARNKIT = {
               "title": "Informative Essay Mission",
               "stages": [
                 {
-                  "text": "[U09-L04-Q03] Choose a topic and write your title.",
-                  "answer": "how to",
-                  "code": "U09-L04-Q03"
+                  "type": "quiz",
+                  "code": "U09-L04-Q03",
+                  "q": "[U09-L04-Q03] Which is the best title for a how-to essay about plants?",
+                  "options": [
+                    "How to Grow a Plant",
+                    "Plants are green and leafy",
+                    "I really like plants a lot",
+                    "A Short Story About a Plant"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 },
                 {
-                  "text": "[U09-L04-Q04] Write your thesis statement.",
-                  "answer": "this essay will explain",
-                  "code": "U09-L04-Q04"
+                  "type": "quiz",
+                  "code": "U09-L04-Q04",
+                  "q": "[U09-L04-Q04] Which is the best thesis statement?",
+                  "options": [
+                    "This essay will explain how to care for a pet dog",
+                    "Dogs are a kind of pet animal",
+                    "I love dogs more than cats",
+                    "Dogs can bark very loudly"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 },
                 {
-                  "text": "[U09-L04-Q05] Write one body paragraph topic sentence.",
-                  "answer": "the first step is",
-                  "code": "U09-L04-Q05"
+                  "type": "quiz",
+                  "code": "U09-L04-Q05",
+                  "q": "[U09-L04-Q05] Which is the best body paragraph topic sentence?",
+                  "options": [
+                    "The first step is to feed your dog on a schedule",
+                    "Dogs are animals that people keep",
+                    "I have a dog at my house",
+                    "Food is good for all dogs"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 }
-              ]
+              ],
+              "strict": true
             }
           ]
         }
@@ -4095,16 +4391,33 @@ window.LEARNKIT = {
               "title": "Sentence Builder Mission",
               "stages": [
                 {
-                  "text": "[U10-L01-Q04] Write a compound sentence about school.",
-                  "answer": "school is fun and",
-                  "code": "U10-L01-Q04"
+                  "type": "quiz",
+                  "code": "U10-L01-Q04",
+                  "q": "[U10-L01-Q04] Which is a correct compound sentence about school?",
+                  "options": [
+                    "School is fun, and I learn new things every day",
+                    "School fun and learn new things",
+                    "School is fun I learn new things",
+                    "School, and fun, and learn things"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 },
                 {
-                  "text": "[U10-L01-Q05] Write a complex sentence starting with \"Because.\"",
-                  "answer": "because i studied",
-                  "code": "U10-L01-Q05"
+                  "type": "quiz",
+                  "code": "U10-L01-Q05",
+                  "q": "[U10-L01-Q05] Which is a correct complex sentence starting with \"Because\"?",
+                  "options": [
+                    "Because I studied, I did well on the test",
+                    "Because studied I did well",
+                    "I because studied for the test",
+                    "Because, I, studied, test, well"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 }
-              ]
+              ],
+              "strict": true
             }
           ]
         },
@@ -4217,16 +4530,33 @@ window.LEARNKIT = {
               "title": "Word Detective Mission",
               "stages": [
                 {
-                  "text": "[U10-L02-Q04] Break apart \"unhappy.\" What is the prefix and root?",
-                  "answer": "un and happy",
-                  "code": "U10-L02-Q04"
+                  "type": "quiz",
+                  "code": "U10-L02-Q04",
+                  "q": "[U10-L02-Q04] Break apart \"unhappy.\" What is the prefix and the root?",
+                  "options": [
+                    "Prefix un-, root happy",
+                    "Prefix happy-, root un",
+                    "Prefix un-, root hap",
+                    "Prefix y-, root unhapp"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 },
                 {
-                  "text": "[U10-L02-Q05] Break apart \"impossible.\" What is the prefix and root?",
-                  "answer": "im and possible",
-                  "code": "U10-L02-Q05"
+                  "type": "quiz",
+                  "code": "U10-L02-Q05",
+                  "q": "[U10-L02-Q05] Break apart \"impossible.\" What is the prefix and the root?",
+                  "options": [
+                    "Prefix im-, root possible",
+                    "Prefix possible-, root im",
+                    "Prefix im-, root poss",
+                    "Prefix ble-, root imposs"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 }
-              ]
+              ],
+              "strict": true
             }
           ]
         },
@@ -4327,16 +4657,33 @@ window.LEARNKIT = {
               "title": "Poet Mission",
               "stages": [
                 {
-                  "text": "[U10-L03-Q04] Write a simile about the ocean.",
-                  "answer": "the ocean is like",
-                  "code": "U10-L03-Q04"
+                  "type": "quiz",
+                  "code": "U10-L03-Q04",
+                  "q": "[U10-L03-Q04] Which is a simile about the ocean?",
+                  "options": [
+                    "The ocean is like a giant blue blanket",
+                    "The ocean is very big and deep",
+                    "The ocean waves crash on the shore",
+                    "I can see the ocean from here"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 },
                 {
-                  "text": "[U10-L03-Q05] Write a personification about a clock.",
-                  "answer": "the clock",
-                  "code": "U10-L03-Q05"
+                  "type": "quiz",
+                  "code": "U10-L03-Q05",
+                  "q": "[U10-L03-Q05] Which is personification about a clock?",
+                  "options": [
+                    "The clock ticked loudly and scolded me for being late",
+                    "The clock is round and made of metal",
+                    "The clock shows the time of day",
+                    "I have a clock in my bedroom"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 }
-              ]
+              ],
+              "strict": true
             }
           ]
         },
@@ -4436,21 +4783,46 @@ window.LEARNKIT = {
               "title": "Story Starter Mission",
               "stages": [
                 {
-                  "text": "[U10-L04-Q04] Write the first sentence of a story about a lost key.",
-                  "answer": "one morning",
-                  "code": "U10-L04-Q04"
+                  "type": "quiz",
+                  "code": "U10-L04-Q04",
+                  "q": "[U10-L04-Q04] Which is the best first sentence of a story about a lost key?",
+                  "options": [
+                    "One morning, Maya could not find her house key",
+                    "Keys are made of shiny metal",
+                    "I have a key on my keychain",
+                    "Keys are used to open doors"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 },
                 {
-                  "text": "[U10-L04-Q05] Describe the setting in one sentence.",
-                  "answer": "the sun shone",
-                  "code": "U10-L04-Q05"
+                  "type": "quiz",
+                  "code": "U10-L04-Q05",
+                  "q": "[U10-L04-Q05] Which best describes the setting?",
+                  "options": [
+                    "The sun shone over the quiet street as Maya searched",
+                    "It was a day of the week",
+                    "Maya is a young girl",
+                    "The key was very small"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 },
                 {
-                  "text": "[U10-L04-Q06] What is the conflict?",
-                  "answer": "the key was missing",
-                  "code": "U10-L04-Q06"
+                  "type": "quiz",
+                  "code": "U10-L04-Q06",
+                  "q": "[U10-L04-Q06] What is the conflict of the story?",
+                  "options": [
+                    "The key was missing, and Maya could not get inside",
+                    "Maya really likes keys a lot",
+                    "The sun was bright and hot",
+                    "The street was long and quiet"
+                  ],
+                  "a": 0,
+                  "okMsg": "Correct!"
                 }
-              ]
+              ],
+              "strict": true
             }
           ]
         }

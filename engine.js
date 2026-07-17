@@ -1485,9 +1485,11 @@
 
     function renderActivity(ph) {
       var gates = ph.stages;
+      var strict = ph.strict === true;
       var astate = state.phases[pi] || {};
       var gi = astate.gi || 0, solved = astate.solved || 0;
-      function saveActivity() { state.phases[pi] = { gi: gi, solved: solved }; persist(); }
+      var locked = astate.locked || false;
+      function saveActivity() { state.phases[pi] = { gi: gi, solved: solved, locked: locked }; persist(); }
       var sub = el('div', 'sg-mis-story');
       var host = el('div', 'sg-act-host');
       var gtrack = el('div', 'sg-mis-track');
@@ -1502,6 +1504,24 @@
       scene.appendChild(gtrack); scene.appendChild(sub); scene.appendChild(host);
       function setBlockState(i, state) { var b = gtrack.children[i]; b.className = 'sg-mis-block ' + state; b.querySelector('.blk-ic').textContent = state === 'done' ? '⚡' : (state === 'cur' ? '📍' : '🔒'); }
       function showStory() { var g = gates[gi]; sub.innerHTML = '<span class="sg-mis-subj">' + esc(g.subject || ph.subject || '') + '</span> ' + esc(g.story || g.prompt || g.text || ''); }
+      function renderLocked() {
+        saveActivity();
+        sub.textContent = '';
+        host.innerHTML = '<div class="sg-drill-done strict-lock">You got a question wrong. In this activity you must answer every question correctly. Try again from the start!</div>';
+        var restart = el('button', 'sg-btn sg-go-btn', 'Try again ↺');
+        restart.addEventListener('click', function () { sound.play('click'); gi = 0; solved = 0; locked = false; saveActivity(); rebuildTrack(); renderGate(); });
+        host.appendChild(restart);
+        SG.mascot.setMood('think');
+      }
+      function rebuildTrack() {
+        gtrack.innerHTML = '';
+        gates.forEach(function (g, i) {
+          var cls = i < gi ? 'done' : (i === gi ? 'cur' : 'lock');
+          var b = el('div', 'sg-mis-block ' + cls);
+          b.innerHTML = '<span class="blk-ic">' + (cls === 'done' ? '⚡' : (cls === 'cur' ? '📍' : '🔒')) + '</span><span class="blk-idx">' + (i + 1) + '</span>';
+          gtrack.appendChild(b);
+        });
+      }
       function renderGate() {
         saveActivity();
         var raw = gates[gi];
@@ -1525,12 +1545,14 @@
         else engineInto(host, g.type, g, gateDone);
         ringOf(solved, gates.length);
       }
-      function gateDone() {
+      function gateDone(ok) {
+        if (!ok && strict) { locked = true; saveActivity(); renderLocked(); return; }
         setBlockState(gi, 'done'); solved++; gi++;
         if (gi >= gates.length) { host.innerHTML = '<div class="sg-mis-win">' + (c.winText || '🎉 Mission complete!') + '</div>'; sub.textContent = ''; ringOf(1, 1); ctx.onWin(); return; }
         setBlockState(gi, 'cur'); saveActivity(); setTimeout(function () { sound.play('click'); renderGate(); }, 420);
       }
-      if (gi >= gates.length) { host.innerHTML = '<div class="sg-mis-win">' + (c.winText || '🎉 Mission complete!') + '</div>'; sub.textContent = ''; ringOf(1, 1); ctx.onWin(); }
+      if (locked) renderLocked();
+      else if (gi >= gates.length) { host.innerHTML = '<div class="sg-mis-win">' + (c.winText || '🎉 Mission complete!') + '</div>'; sub.textContent = ''; ringOf(1, 1); ctx.onWin(); }
       else renderGate();
     }
 
